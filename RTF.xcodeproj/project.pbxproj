@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5AC7A1128EF6709C652A730 /* Pods_RTF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AFC2C1F25D7BE25DF7EB7B /* Pods_RTF.framework */; };
 		E5246A1E23AF795400EC71A1 /* likeButton.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E5246A1D23AF795300EC71A1 /* likeButton.pdf */; };
 		E5246A2023AFCF6200EC71A1 /* userProfilePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5246A1F23AFCF6200EC71A1 /* userProfilePopup.swift */; };
 		E5A2338C23AF72E500D889EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A2338A23AF72E500D889EC /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11AFC2C1F25D7BE25DF7EB7B /* Pods_RTF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		892A1881A922B86E8624AAC4 /* Pods-RTF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTF.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTF/Pods-RTF.release.xcconfig"; sourceTree = "<group>"; };
 		E5246A1D23AF795300EC71A1 /* likeButton.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = likeButton.pdf; sourceTree = "<group>"; };
 		E5246A1F23AFCF6200EC71A1 /* userProfilePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfilePopup.swift; sourceTree = "<group>"; };
 		E5A2338B23AF72E500D889EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		E5B3C13B239AB11700C7E00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5B3C143239D093300C7E00F /* userListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userListCollectionViewCell.swift; sourceTree = "<group>"; tabWidth = 4; };
 		E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLikePopup.swift; sourceTree = "<group>"; };
+		E678D7B03556851580CEFAB5 /* Pods-RTF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTF/Pods-RTF.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5AC7A1128EF6709C652A730 /* Pods_RTF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79CA0035AF6C841C124822F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E678D7B03556851580CEFAB5 /* Pods-RTF.debug.xcconfig */,
+				892A1881A922B86E8624AAC4 /* Pods-RTF.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84A5AB41E14CD594EED84567 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11AFC2C1F25D7BE25DF7EB7B /* Pods_RTF.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E5B3C121239AB11600C7E00F = {
 			isa = PBXGroup;
 			children = (
 				E5B3C12C239AB11600C7E00F /* RTF */,
 				E5B3C12B239AB11600C7E00F /* Products */,
 				E5246A1D23AF795300EC71A1 /* likeButton.pdf */,
+				79CA0035AF6C841C124822F3 /* Pods */,
+				84A5AB41E14CD594EED84567 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5B3C13E239AB11700C7E00F /* Build configuration list for PBXNativeTarget "RTF" */;
 			buildPhases = (
+				25B0A8FE141EE748FB08EA19 /* [CP] Check Pods Manifest.lock */,
 				E5B3C126239AB11600C7E00F /* Sources */,
 				E5B3C127239AB11600C7E00F /* Frameworks */,
 				E5B3C128239AB11600C7E00F /* Resources */,
+				E3D49A4E1C2D06F6E89AA6BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +171,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25B0A8FE141EE748FB08EA19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RTF-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3D49A4E1C2D06F6E89AA6BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RTF/Pods-RTF-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTF/Pods-RTF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5B3C126239AB11600C7E00F /* Sources */ = {
@@ -298,6 +363,7 @@
 		};
 		E5B3C13F239AB11700C7E00F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E678D7B03556851580CEFAB5 /* Pods-RTF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +382,7 @@
 		};
 		E5B3C140239AB11700C7E00F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892A1881A922B86E8624AAC4 /* Pods-RTF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
