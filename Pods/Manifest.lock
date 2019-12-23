@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ReSwift (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ReSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ReSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
+
+PODFILE CHECKSUM: 39d6bfbe750f1ca699eb0dad3319805a792ebf86
+
+COCOAPODS: 1.5.2

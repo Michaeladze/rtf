@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 var navButton: String = "Default"
 
@@ -35,9 +36,18 @@ class mainScreenViewVontroller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        /* test funcion */
+        getRequest()
     }
     
+}
+
+func getRequest (){
+    print("get request invoked from mainScreenViewVontroller.swift");
+    
+    let sessionManager = SessionManager()
+    sessionManager.adapter = interceptor(customParams: "1234")
+    sessionManager.request("https://jsonplaceholder.typicode.com/posts")
 }
 
 //Расширение основого контролллера - Обработчик списка пользователей
