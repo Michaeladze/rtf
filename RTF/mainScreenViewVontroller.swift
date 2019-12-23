@@ -35,7 +35,10 @@ class mainScreenViewVontroller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+
+
+
         /* test funcion */
         getRequest()
     }
@@ -43,7 +46,9 @@ class mainScreenViewVontroller: UIViewController {
 }
 
 func getRequest (){
-    print("get request invoked from mainScreenViewVontroller.swift");
+
+    print(Environment.appAuth);
+
     
     let sessionManager = SessionManager()
     sessionManager.adapter = interceptor(customParams: "1234")
