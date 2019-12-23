@@ -1,8 +1,0 @@
-@import "../../../../react_shared/_utils/index";
-
-.shaper {
-  @include widthLessThan($mobile-rtf) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}

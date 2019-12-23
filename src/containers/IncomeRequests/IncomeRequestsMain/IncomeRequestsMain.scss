@@ -1,9 +1,0 @@
-@import '../../../react_shared/_utils/index';
-
-.income-request-mobile {
-  @include widthLessThan($mobile-rtf) {
-    padding: 0 30px 30px;
-    background-color: $white;
-    border-radius: 0 0 $rtf_big_radius $rtf_big_radius;
-  }
-}

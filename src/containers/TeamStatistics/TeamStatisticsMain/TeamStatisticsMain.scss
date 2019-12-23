@@ -1,9 +1,0 @@
-@import '../../../react_shared/_utils/index';
-
-.team-statistics__count {
-  @include standardText($weight: 500, $color: $rtf_text_grey);
-}
-
-.info-tip.team {
-  padding: rem(20px 0);
-}
