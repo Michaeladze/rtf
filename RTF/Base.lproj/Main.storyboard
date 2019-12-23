@@ -170,6 +170,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masks.ToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ZC4-zF-VOQ" kind="presentation" id="FlF-0I-iv2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176470588238" green="0.94117647058823528" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
@@ -209,9 +212,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1Z-6b-Bzo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1Z-6b-Bzo">
                                 <rect key="frame" x="72" y="91" width="147" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -228,6 +230,12 @@
                             </button>
                         </subviews>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="h1Z-6b-Bzo" firstAttribute="leading" secondItem="MI7-UT-e3d" secondAttribute="leading" constant="72" id="KTl-4L-hSI"/>
+                            <constraint firstItem="h1Z-6b-Bzo" firstAttribute="top" secondItem="MI7-UT-e3d" secondAttribute="top" constant="47" id="N7U-1q-jkT"/>
+                            <constraint firstItem="MI7-UT-e3d" firstAttribute="bottom" secondItem="h1Z-6b-Bzo" secondAttribute="bottom" constant="654" id="XnK-Qb-3bO"/>
+                            <constraint firstItem="MI7-UT-e3d" firstAttribute="trailing" secondItem="h1Z-6b-Bzo" secondAttribute="trailing" constant="195" id="Y8B-4K-JXQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MI7-UT-e3d"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="aCS-oc-RtU" appends="YES" id="HKL-iu-VXw"/>
@@ -241,7 +249,55 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="873.91304347826099" y="140.625"/>
+            <point key="canvasLocation" x="-610" y="-483"/>
+        </scene>
+        <!--userLikeMenu-->
+        <scene sceneID="dEF-Xh-6ki">
+            <objects>
+                <viewController title="userLikeMenu" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="ZC4-zF-VOQ" userLabel="userLikeMenu" customClass="userLikePopup" customModule="RTF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xq3-kg-5rz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNo-Hz-MAH">
+                                <rect key="frame" x="195" y="91" width="147" height="117"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Popupchik"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closePopup:" destination="ZC4-zF-VOQ" eventType="touchUpInside" id="FKP-Ss-3vm"/>
+                                    <action selector="closePopup:" destination="hK5-gI-73T" eventType="touchUpInside" id="Nzd-ju-QYQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="fgK-Ig-KfX" firstAttribute="trailing" secondItem="YNo-Hz-MAH" secondAttribute="trailing" constant="72" id="7ix-6h-bck"/>
+                            <constraint firstItem="YNo-Hz-MAH" firstAttribute="top" secondItem="fgK-Ig-KfX" secondAttribute="top" constant="47" id="RNK-6J-m3g"/>
+                            <constraint firstItem="YNo-Hz-MAH" firstAttribute="leading" secondItem="fgK-Ig-KfX" secondAttribute="leading" constant="195" id="cfK-I7-Vlz"/>
+                            <constraint firstItem="fgK-Ig-KfX" firstAttribute="bottom" secondItem="YNo-Hz-MAH" secondAttribute="bottom" constant="654" id="yRg-HK-jer"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fgK-Ig-KfX"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Rdx-n9-Atn" appends="YES" id="itD-Wd-X4V"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5u-eQ-0aN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Rdx-n9-Atn">
+                    <connections>
+                        <action selector="closePopupTap:" destination="ZC4-zF-VOQ" id="UBW-59-JIE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="849" y="-483"/>
         </scene>
     </scenes>
     <resources>

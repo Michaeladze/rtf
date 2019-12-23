@@ -16,6 +16,7 @@
 		E5B3C137239AB11700C7E00F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B3C136239AB11700C7E00F /* Assets.xcassets */; };
 		E5B3C13A239AB11700C7E00F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B3C138239AB11700C7E00F /* LaunchScreen.storyboard */; };
 		E5B3C144239D093300C7E00F /* userListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C143239D093300C7E00F /* userListCollectionViewCell.swift */; };
+		E5C5AB5E23B0C1AB00A64161 /* userLikePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E5B3C139239AB11700C7E00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5B3C13B239AB11700C7E00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5B3C143239D093300C7E00F /* userListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userListCollectionViewCell.swift; sourceTree = "<group>"; tabWidth = 4; };
+		E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLikePopup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				E5B3C131239AB11600C7E00F /* mainScreenViewVontroller.swift */,
 				E5B3C143239D093300C7E00F /* userListCollectionViewCell.swift */,
 				E5246A1F23AFCF6200EC71A1 /* userProfilePopup.swift */,
+				E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */,
 				E5B3C136239AB11700C7E00F /* Assets.xcassets */,
 				E5B3C138239AB11700C7E00F /* LaunchScreen.storyboard */,
 				E5B3C13B239AB11700C7E00F /* Info.plist */,
@@ -150,6 +153,7 @@
 			files = (
 				E5B3C144239D093300C7E00F /* userListCollectionViewCell.swift in Sources */,
 				E5B3C132239AB11600C7E00F /* mainScreenViewVontroller.swift in Sources */,
+				E5C5AB5E23B0C1AB00A64161 /* userLikePopup.swift in Sources */,
 				E5B3C12E239AB11600C7E00F /* AppDelegate.swift in Sources */,
 				E5B3C130239AB11600C7E00F /* SceneDelegate.swift in Sources */,
 				E5246A2023AFCF6200EC71A1 /* userProfilePopup.swift in Sources */,

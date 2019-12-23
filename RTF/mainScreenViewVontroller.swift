@@ -51,12 +51,9 @@ extension mainScreenViewVontroller: UICollectionViewDelegate, UICollectionViewDa
             as! userListCollectionViewCell
         cell.firstName.text = navButton + String(indexPath.row)
         cell.lastName.text = "Первый " + String(indexPath.row)
-        
-        /*Настройка картинки - надо разбораться, что из этого мусора действительно нужно*/
+
         cell.userImage.layer.cornerRadius = 30
-        cell.userImage.layer.masksToBounds = true
-        cell.userImage.contentMode = UIView.ContentMode.scaleAspectFill
-        cell.userImage.clipsToBounds = true
+        //cell.userImage.layer.masksToBounds = true
         cell.userImage.image = #imageLiteral(resourceName: "ava.jpg")
         return cell
     }
