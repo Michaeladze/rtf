@@ -1,0 +1,35 @@
+@import "../../../react_shared/_utils/index";
+
+.thankful__top {
+  height: rem(320px);
+  background-color: $rtf_blue;
+  margin: rem(-70px -50px 30px -50px);
+}
+
+.thankful__top {
+  background-image: url(../../../_assets/svg/leaveComment.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.thankful__title {
+  padding: rem(50px 50px 0 50px);
+
+  @include heading(h5, $color: $rtf_white, $weight: 500);
+
+  text-align: center;
+}
+
+.thankful__input {
+  width: 100%;
+  height: rem(105px);
+  margin-bottom: rem(17px);
+
+  @include inputText($border: 1px solid $rtf_form_border);
+}
+
+.thankful__action {
+  @include widthLessThan($mobile-rtf) {
+    padding-bottom: 40px;
+  }
+}

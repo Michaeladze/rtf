@@ -1,0 +1,69 @@
+@import "../../../../../react_shared/_utils/index";
+
+.request-project__top {
+  margin-bottom: rem(35px);
+}
+
+.request-project__title {
+  margin-bottom: rem(5px);
+
+  @include heading(h6, $weight: 500);
+}
+
+.request-project__description {
+  @include standardText($size: 18px, $color: $rtf_black);
+
+  @include widthLessThan($mobile-rtf) {
+    font-size: rem(16px);
+  }
+}
+
+.request-project__rate {
+  margin-bottom: rem(40px);
+  padding: rem(16px 20px);
+  border-radius: $rtf_xs_radius;
+  border: 1px solid $rtf_default_border;
+}
+
+.request-project__rate-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include widthLessThan($mobile-rtf) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.request-project__rate-title {
+  @include heading(h6, $weight: 500);
+
+  font-size: rem(16px);
+
+  @include widthLessThan($mobile-rtf) {
+    margin-bottom: rem(20px);
+  }
+}
+
+.request-project__slider {
+  display: flex;
+  align-items: center;
+  max-width: rem(390px);
+  width: 100%;
+
+  @include widthLessThan($mobile-rtf) {
+    max-width: 100%;
+    margin-bottom: rem(20px);
+  }
+}
+
+.request-project__actions .rtf__standard-button {
+  font-size: rem(16px);
+}
+
+.request-project__actions .rtf__standard-button:not(:last-child) {
+  @include widthLessThan($mobile-rtf) {
+    margin-bottom: rem(5px);
+  }
+}

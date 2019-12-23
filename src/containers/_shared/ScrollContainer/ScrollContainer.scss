@@ -1,0 +1,14 @@
+@import '../../../react_shared/_utils/index';
+
+.scroll-container {
+  overflow-y: hidden;
+}
+
+.scroll-container__inner {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}

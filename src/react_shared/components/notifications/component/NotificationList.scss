@@ -1,0 +1,23 @@
+@import '../../../../react_shared/_utils/index';
+
+.notifications {
+  position: fixed;
+  bottom: rem(20px);
+  z-index: 1500;
+
+  @include widthMoreThan($tablet) {
+    left: 50%;
+    width: 500px;
+    transform: translateX(-50%);
+  }
+
+  @include widthLessThan($tablet) {
+    width: auto;
+    left: 20px;
+    right: 20px;
+  }
+}
+
+.notifications__item:not(:last-child) {
+  margin-bottom: rem(15px);
+}

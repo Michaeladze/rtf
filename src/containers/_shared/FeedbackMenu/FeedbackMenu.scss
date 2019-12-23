@@ -1,0 +1,178 @@
+@import '../../../react_shared/_utils/index';
+
+.dialog-feedback {
+  padding: rem(50px);
+
+  @include widthLessThan($mobile-rtf) {
+    padding: 30px;
+  }
+}
+
+.feedback-menu__photo {
+  width: rem(90px);
+  height: rem(90px);
+  margin: rem(0 auto 15px auto);
+  background-color: $rtf_light_peach;
+  border-radius: 50%;
+}
+
+.feedback-menu__name {
+  margin-bottom: rem(5px);
+
+  @include titleText($size: 20px, $color: $rtf_black);
+
+  text-align: center;
+}
+
+.feedback-menu__position {
+  margin-bottom: rem(30px);
+
+  @include standardText($color: $rtf_text_grey);
+
+  text-align: center;
+}
+
+.feedback-menu__buttons {
+  display: flex;
+  margin: rem(0 -12px 40px -12px);
+}
+
+.feedback-menu__link {
+  max-width: 50%;
+  width: 100%;
+  padding: rem(0 12px);
+}
+
+.feedback-menu__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: rem(16px);
+  border-radius: $borderBigRadius;
+  border: 0;
+  cursor: pointer;
+}
+
+.feedback-menu__button[disabled] {
+  cursor: default;
+  background-color: $rtf_blue_grey;
+}
+
+.feedback-menu__button[disabled] .feedback-menu__button-icon__wrapper {
+  background-color: $rtf_grey;
+}
+
+.feedback-menu__button[disabled] .feedback-menu__button-text {
+  color: $rtf_text_grey;
+}
+
+.feedback-menu__button:hover,
+.feedback-menu__button:focus {
+  border: 0;
+}
+
+.feedback-menu__button--pink,
+.feedback-menu__button--pink:hover {
+  background-color: $rtf_light_pink;
+}
+
+.feedback-menu__button--grey,
+.feedback-menu__button--grey:hover {
+  background-color: $rtf_blue_grey;
+}
+
+.feedback-menu__button[disabled]:hover {
+  background-color: $rtf_blue_grey;
+}
+
+.feedback-menu__button--dropdown {
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-radius: 0;
+}
+
+.feedback-menu__button--dropdown:hover {
+  background-color: transparent;
+}
+
+.feedback-menu__button-icon__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: rem(60px);
+  height: rem(60px);
+  margin-bottom: rem(15px);
+
+  @include standardText(25px, 400, $rtf_white);
+
+  border-radius: 50%;
+}
+
+.feedback-menu__button--dropdown .feedback-menu__button-icon__wrapper {
+  width: rem(40px);
+  min-width: rem(40px);
+  height: rem(40px);
+  font-size: rem(20px);
+  margin-bottom: 0;
+}
+
+.feedback-menu__button-icon__wrapper--pink {
+  background-color: $rtf_purple;
+}
+
+.feedback-menu__button-icon__wrapper--grey {
+  background-color: $rtf_blue;
+}
+
+.feedback-menu__button-icon {
+  width: 35px;
+  height: 35px;
+  fill: $rtf_white;
+}
+
+.feedback-menu__button-icon.arrow-upward {
+  transform: rotate(-90deg);
+}
+
+.feedback-menu__button-icon.arrow-downward {
+  transform: rotate(90deg);
+}
+
+.feedback-menu__button-text {
+  @include standardText(16px, 500, $rtf_black);
+
+  line-height: rem(20px);
+  white-space: pre-wrap;
+
+  @include widthLessThan($mobile-rtf) {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+.feedback-menu__button--dropdown .feedback-menu__button-text {
+  margin-left: rem(24px);
+  padding: 0;
+  text-align: left;
+}
+
+.feedback-menu__history {
+  @include standardText($color: $rtf_blue, $weight: 500);
+
+  line-height: 1.6;
+  text-align: center;
+}
+
+.feedback-menu__history a {
+  color: $rtf_blue;
+  font-size: rem(18px);
+}
+
+.feedback-menu__history-link {
+  cursor: pointer;
+}

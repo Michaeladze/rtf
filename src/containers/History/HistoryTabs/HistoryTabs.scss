@@ -1,0 +1,32 @@
+@import "../../../react_shared/_utils/index";
+
+.tab__buttons {
+  height: rem(40px);
+  margin-bottom: rem(25px);
+  border-bottom: 1px solid $rtf_default_border;
+  display: flex;
+  align-items: center;
+}
+
+.tab__button {
+  height: 100%;
+  margin-right: rem(30px);
+
+  @include textButton($weight: 600, $color: $lightGrey, $size: 20px);
+
+  border-bottom: 4px solid transparent;
+  transition: all 0.3s ease-in;
+
+  @include widthLessThan($mobile-rtf) {
+    margin-right: rem(20px);
+  }
+}
+
+.tab__button:hover {
+  color: $rtf_black;
+}
+
+.tab__button.active {
+  color: $rtf_black;
+  border-bottom-color: $rtf_blue;
+}

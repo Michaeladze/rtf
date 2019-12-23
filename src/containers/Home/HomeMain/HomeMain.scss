@@ -1,0 +1,13 @@
+@import '../../../react_shared/_utils/index';
+
+.home__main {
+  padding: rem(50px);
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @include widthLessThan($mobile-rtf) {
+    padding: rem(30px);
+    display: block;
+  }
+}

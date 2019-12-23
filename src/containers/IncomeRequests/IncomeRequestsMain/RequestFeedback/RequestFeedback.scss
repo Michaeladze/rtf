@@ -1,0 +1,11 @@
+@import "../../../../react_shared/_utils/index";
+
+.request-feedback__button {
+  max-width: rem(228px);
+  width: 100%;
+
+  @include widthLessThan($mobile-rtf) {
+    max-width: 100%;
+    font-size: rem(16px);
+  }
+}

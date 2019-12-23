@@ -1,0 +1,22 @@
+@import "../../react_shared/_utils/index";
+
+.rating-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: rem(40px);
+  min-height: rem(40px);
+  margin-right: rem(10px);
+  background-color: $rtf_grey;
+  border-radius: 50%;
+}
+
+.rating-wrapper.number {
+  background-color: $rtf_blue_grey;
+}
+
+.rating__number {
+  @include heading(h6, $rtf_blue, $weight: 500);
+
+  line-height: 0.8;
+}

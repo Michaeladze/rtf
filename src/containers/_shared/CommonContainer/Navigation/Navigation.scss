@@ -1,0 +1,96 @@
+@import '../../../../react_shared/_utils/index';
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  padding-top: rem(45px);
+  background: $rtf_default_gradient;
+
+  @include widthLessThan($mobile-rtf) {
+    display: none;
+  }
+}
+
+.navigation__home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(40px);
+  width: rem(40px);
+  margin-bottom: rem(180px);
+  background-color: #7387ff; // todo
+  border-radius: 50%;
+}
+
+.navigation__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(75px);
+  height: rem(75px);
+  margin-bottom: rem(10px);
+  border-radius: $borderBigRadius;
+}
+
+.navigation__link:hover,
+.navigation__link.active {
+  background-color: $rtf_white;
+  box-shadow: $rtf_default_box_shadow;
+  transition: 0.3s all ease-in;
+}
+
+.navigation__icon {
+  height: rem(40px);
+  width: rem(40px);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navigation__icon--feedback {
+  background-image: url(../../../../_assets/svg/home/home__feedback-hover.svg);
+}
+
+.navigation__link:hover .navigation__icon--feedback,
+.navigation__link.active .navigation__icon--feedback {
+  background-image: url(../../../../_assets/svg/home/home__feedback.svg);
+}
+
+.navigation__icon--projects {
+  background-image: url(../../../../_assets/svg/home/home__projects-hover.svg);
+}
+
+.navigation__link:hover .navigation__icon--projects,
+.navigation__link.active .navigation__icon--projects {
+  background-image: url(../../../../_assets/svg/home/home__projects.svg);
+}
+
+.navigation__icon--meetings {
+  background-image: url(../../../../_assets/svg/home/home__meetings-hover.svg);
+}
+
+.navigation__link:hover .navigation__icon--meetings,
+.navigation__link.active .navigation__icon--meetings {
+  background-image: url(../../../../_assets/svg/home/home__meetings.svg);
+}
+
+.navigation__icon--sberprofi {
+  background-image: url(../../../../_assets/svg/home/home__sberprofi-hover.svg);
+}
+//
+//.navigation__link:hover .navigation__icon--sberprofi,
+//.navigation__link.active .navigation__icon--sberprofi {
+//  background-image: url(../../../../_assets/svg/home/home__sberprofi.svg);
+//}
+
+.navigation__icon.disabled {
+  opacity: 0.3;
+}
+
+.navigation__link.disabled {
+  background: transparent;
+  box-shadow: none;
+  cursor: default;
+}

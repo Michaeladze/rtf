@@ -1,0 +1,75 @@
+@import "../../../react_shared/_utils/index";
+
+.feedback-action__tabs {
+  margin-bottom: rem(15px);
+}
+
+.feedback-action__description {
+  margin-bottom: rem(20px);
+
+  @include standardText($size: 18px, $color: $rtf_text_grey);
+
+  line-height: 1.25;
+
+  @include widthLessThan($desktopMin) {
+    display: none;
+  }
+}
+
+.feedback-action__group:not(:last-child) {
+  margin-bottom: rem(15px);
+}
+
+.feedback-action__group-title {
+  margin-bottom: rem(15px);
+
+  @include widthLessThan($mobile-rtf) {
+    margin-bottom: 0;
+  }
+}
+
+.feedback-action__group-title-text {
+  margin-bottom: rem(10px);
+
+  @include heading(h4, $weight: 500);
+
+  @include widthLessThan($desktopMin) {
+    font-size: rem(18px);
+  }
+}
+
+.feedback-action__search {
+  max-width: rem(375px);
+  margin-bottom: rem(25px);
+}
+
+.feedback-action__swiper {
+  position: relative;
+  margin-bottom: rem(30px);
+
+  @include widthLessThan($mobile-rtf) {
+    margin: 0 -30px;
+  }
+}
+
+.feedback-action__swiper .swiper-slide {
+  display: flex;
+  height: auto;
+  width: 180px;
+
+  @include widthLessThan($mobile-rtf) {
+    width: 150px;
+  }
+}
+
+.feedback-action__swiper .swiper-slide:first-of-type {
+  @include widthLessThan($mobile-rtf) {
+    margin-left: 30px;
+  }
+}
+
+.feedback-action__swiper .swiper-slide:last-of-type {
+  @include widthLessThan($mobile-rtf) {
+    margin-right: 30px;
+  }
+}

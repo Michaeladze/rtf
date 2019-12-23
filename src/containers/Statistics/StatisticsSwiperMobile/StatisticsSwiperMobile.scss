@@ -1,0 +1,30 @@
+@import "../../../react_shared/_utils/index";
+
+.statistics__swiper--mobile {
+  display: none;
+
+  @include widthLessThan($mobile-rtf) {
+    display: flex;
+    order: 6;
+    margin: rem(10px -30px);
+    position: relative;
+  }
+}
+
+.statistics__swiper--mobile .swiper-slide {
+  @include widthLessThan($mobile-rtf) {
+    height: auto;
+  }
+}
+
+.statistics__swiper--mobile .swiper-slide:first-of-type {
+  @include widthLessThan($mobile-rtf) {
+    margin-left: 30px;
+  }
+}
+
+.statistics__swiper--mobile .swiper-slide:last-of-type {
+  @include widthLessThan($mobile-rtf) {
+    margin-right: 30px;
+  }
+}

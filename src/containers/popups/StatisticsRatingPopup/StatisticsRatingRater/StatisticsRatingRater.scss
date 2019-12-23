@@ -1,0 +1,28 @@
+@import '../../../../react_shared/_utils/index';
+
+.statistic-rating__item:not(:last-child) {
+  border-bottom: 1px solid $rtf_default_border;
+}
+
+.statistic-rating__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(15px 0);
+  border-bottom: none;
+}
+
+.statistic-rating__content .user-title__position {
+  padding-right: rem(20px);
+}
+
+.statistic-rating__comment {
+  padding-bottom: rem(20px);
+
+  @include standardText($color: $rtf_text_grey);
+}
+
+.statistic-rating__content .rating-wrapper.number {
+  max-width: 50px;
+  max-height: 50px;
+}

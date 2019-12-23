@@ -1,0 +1,81 @@
+@import "../../../../../react_shared/_utils/index";
+
+.member__user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.member__user-image {
+  position: relative;
+  width: 55px;
+  min-width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.member__user-name {
+  margin-top: 12px;
+
+  @include standardText(14px, 500, $rtf_text_grey);
+
+  font-size: 14px;
+  line-height: rem(18px);
+  text-align: center;
+  white-space: pre-wrap;
+  word-break: break-word;
+  hyphens: auto;
+  transition: 0.3s ease-in color;
+
+  @include widthLessThan($mobile-rtf) {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+
+.member__user-image--mark {
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px 13px;
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  border: 3px solid $rtf_white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $rtf_blue;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in all;
+}
+
+.member__user-card:not(.disabled):hover .member__user-name {
+  color: $rtf_black;
+}
+
+.member__user-card.active .member__user-name {
+  color: $rtf_black;
+}
+
+.member__user-card.active .member__user-image--mark {
+  background-image: url("../../../../../_assets/svg/check__smooth.svg");
+  opacity: 1;
+}
+
+.member__user-card:not(.active):hover .member__user-image--mark {
+  background-image: url("../../../../../_assets/svg/plus__smooth.svg");
+  opacity: 1;
+}
+
+.member__user-card.disabled:not(.active) .member__user-image--mark {
+  opacity: 0;
+}

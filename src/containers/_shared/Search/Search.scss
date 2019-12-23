@@ -1,0 +1,72 @@
+@import "../../../react_shared/_utils/index";
+
+.search {
+  position: relative;
+}
+
+.search__input {
+  max-width: 100%;
+  width: 100%;
+
+  @include inputText($borderRadius: rem(20px), $border: 2px solid $rtf_form_border, $bg: $rtf_white);
+
+  padding: rem(8px 52px 8px 15px);
+  color: $rtf_text_grey;
+  transition: 0.3s ease-in border-color;
+  font-size: 16px;
+  line-height: 20px;
+
+  @include widthLessThan($mobile-rtf) {
+    background-color: $rtf_blue_grey;
+    padding: rem(10px 50px 10px 20px);
+    border-color: transparent;
+  }
+}
+
+.search__input::placeholder {
+  color: $rtf_text_grey;
+  font-family: inherit;
+}
+
+.search__input:focus {
+  border-color: $rtf_blue;
+}
+
+.search__action {
+  @include absoluteCenter($horizontal: false, $vertical: true);
+
+  right: rem(15px);
+  height: rem(40px);
+  border-radius: rem(0 20px 20px 0) !important;
+  border: 0;
+  line-height: 0;
+  background-color: transparent;
+  transition: 0.3s ease-in color;
+  cursor: pointer;
+
+  @include widthLessThan($mobile-rtf) {
+    right: 12px;
+  }
+}
+
+.search__icon {
+  fill: $rtf_grey;
+  transition: 0.3s ease-in fill;
+}
+
+.search__icon--search {
+  cursor: default;
+  pointer-events: none;
+}
+
+.search__icon--close {
+  transform: rotate(45deg);
+}
+
+.search__icon--close path {
+  stroke: $rtf_grey;
+}
+
+.search__input:focus + .search__action .search__icon {
+  fill: $rtf_blue;
+}

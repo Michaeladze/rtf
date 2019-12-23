@@ -1,0 +1,35 @@
+@import "../../../react_shared/_utils/index";
+
+.result-rating__top {
+  display: flex;
+  align-items: center;
+  height: rem(320px);
+  padding-left: rem(50px);
+  // картинка
+  background-color: #90c3ef; //todo color
+  background-image: url(../../../_assets/svg/popup__bg.svg);
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  margin: rem(-70px -50px 30px -50px);
+}
+
+.result-rating__title {
+  @include heading(h2);
+}
+
+.result-rating__title--content {
+  margin-bottom: rem(20px);
+
+  @include heading(h3, $weight: 500);
+}
+
+.result-rating__subtitle {
+  margin-bottom: rem(10px);
+
+  @include heading(h4, $weight: 300, $color: $rtf_text_grey);
+}
+
+.result-rating__section {
+  margin-bottom: rem(30px);
+}

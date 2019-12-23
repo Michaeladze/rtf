@@ -1,0 +1,25 @@
+@import "../../react_shared/_utils/index";
+
+.beta-version__popup {
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #ffebe9;
+  text-align: center;
+
+  @include standardText(16px, 500, $rtf_black);
+
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include widthLessThan($mobile-rtf) {
+    font-size: 14px;
+    height: auto;
+    padding: 8px;
+    position: relative;
+  }
+}

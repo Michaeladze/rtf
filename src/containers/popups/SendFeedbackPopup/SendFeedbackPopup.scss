@@ -1,0 +1,180 @@
+@import "../../../react_shared/_utils/index";
+
+.send-feedback-popup {
+  position: absolute;
+  left: 50%;
+  bottom: 3rem;
+  max-width: 56.25rem;
+  width: 96%;
+  padding: 1.25rem 1.5rem;
+  background-color: $rtf_blue_grey;
+  border-radius: 1.25rem;
+  transform: translateX(-50%);
+  z-index: 20;
+
+  @include widthLessThan($mobile-rtf) {
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    padding: rem(30px 30px 140px);
+    border-radius: 2.5rem 2.5rem 0 0;
+    transform: translate3d(0, 100%, 0);
+    overflow-x: hidden;
+    animation: 0.25s ease-out forwards appearFeedback;
+  }
+
+  @keyframes appearFeedback {
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.send-feedback-popup__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @include widthLessThan($mobile-rtf) {
+    flex-direction: column;
+  }
+}
+
+.send-feedback-popup__block {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 60%;
+  width: 100%;
+
+  @include widthLessThan($mobile-rtf) {
+    max-width: 100%;
+
+    &:first-child {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: rem(20px);
+    }
+  }
+}
+
+.send-feedback-popup__block.sb {
+  justify-content: space-between;
+  max-width: 40%;
+
+  @include widthLessThan($mobile-rtf) {
+    max-width: 100%;
+  }
+}
+
+.send-feedback-popup__title {
+  display: flex;
+  align-items: center;
+}
+
+.send-feedback-popup__title-text {
+  @include heading(h6, $weight: 500);
+}
+
+.send-feedback-popup__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 150rem;
+  width: 100%;
+  padding: rem(0 16px);
+
+  @include widthLessThan($mobile-rtf) {
+    padding: rem(10px 0 0);
+    max-width: 100%;
+  }
+}
+
+.send-feedback-popup__value {
+  @include standardText(18px, 500, $rtf_black);
+}
+
+.send-feedback-popup__slider-wrapper {
+  max-width: 92%;
+  width: 100%;
+  padding: rem(0 20px);
+}
+
+.send-feedback-popup__counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  margin-left: rem(10px);
+
+  @include standardText(18px, 600, $white);
+
+  background-color: $rtf_blue;
+  border-radius: 50%;
+
+  @include widthLessThan($mobile-rtf) {
+    margin: rem(0 10px);
+  }
+}
+
+.send-feedback-popup__block .rtf__standard-button--link {
+  max-width: rem(130px);
+  width: 100%;
+}
+
+.send-feedback-popup__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  @include textButton($color: $rtf_text_grey);
+
+  color: $rtf_text_grey;
+
+  @include widthLessThan($mobile-rtf) {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.send-feedback-popup__close svg {
+  width: 15px;
+  height: 15px;
+}
+
+.send-feedback-popup__send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(60px);
+  height: rem(60px);
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  outline: none;
+  background-color: $rtf_blue;
+}
+
+.send-feedback-popup__send-icon {
+  fill: $white;
+  width: 33px;
+  height: 33px;
+}
+
+.send-feedback-popup__textarea {
+  max-width: rem(235px);
+  height: rem(45px);
+  width: 100%;
+
+  @include inputText($borderRadius: $borderRadius  $borderBigRadius  $borderBigRadius  $borderBigRadius,
+  $border: 1px solid transparent, $bg: $white);
+
+  resize: none;
+}

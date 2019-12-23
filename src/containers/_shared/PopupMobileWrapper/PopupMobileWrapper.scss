@@ -1,0 +1,17 @@
+.popup-mobile__wrapper {
+  position: relative;
+}
+
+.mobile-content__line {
+  position: absolute;
+  z-index: 5;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 42px;
+  height: 5px;
+  border-radius: 26px;
+  background: #a7b6c8;
+  opacity: 0.3;
+  transition: opacity 0.15s;
+}

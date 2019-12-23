@@ -1,0 +1,88 @@
+@import "../../react_shared/_utils/index";
+
+.user-title {
+  display: flex;
+  align-items: center;
+}
+
+.user-title__photo {
+  position: relative;
+  flex-shrink: 0;
+  min-width: rem(50px);
+  margin-right: rem(10px);
+  background-color: $rtf_light_pink;
+  border-radius: 50%;
+
+  @include widthMoreThan($mobile-rtf) {
+    min-width: 50px;
+    height: 50px;
+  }
+
+  @include widthLessThan($mobile-rtf) {
+    min-width: 40px;
+    height: 40px;
+  }
+}
+
+.user-title__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-title__name {
+  @include standardText($color: $rtf_black);
+
+  @include widthLessThan($mobile-rtf) {
+    font-size: rem(18px);
+    font-weight: 500;
+  }
+}
+
+.user-title__patronymic {
+  @include widthLessThan($mobile-rtf) {
+    display: none;
+  }
+}
+
+.user-title__position {
+  @include standardText($color: $rtf_text_grey, $weight: 300);
+
+  @include widthLessThan($mobile-rtf) {
+    display: none;
+  }
+}
+
+.user-title__pin {
+  position: absolute;
+  bottom: 0;
+  right: rem(-5px);
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include textButton($color: $rtf_text_grey);
+
+  background-color: $rtf_text_grey;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s ease-in opacity, 0.3s ease-in background-color;
+
+  @include widthLessThan($mobile-rtf) {
+    display: none;
+  }
+}
+// TODO раскомментить, когда будет реализован пин со стороны бэка
+//
+//.user-title:hover .user-title__pin {
+//  opacity: 1;
+//  pointer-events: auto;
+//}
+//
+//.user-title__pin.pinned {
+//  background-color: $rtf_blue;
+//  opacity: 1;
+//  pointer-events: auto;
+//}

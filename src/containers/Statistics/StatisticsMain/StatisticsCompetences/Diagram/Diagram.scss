@@ -1,0 +1,126 @@
+@import "../../../../../react_shared/_utils/index";
+
+.diagram {
+  @include widthLessThan($mobile-rtf) {
+    width: 100%;
+    padding-top: rem(20px);
+    order: 1;
+  }
+}
+// progress bars
+//----------------------------------
+.diagram__list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: rem(30px);
+}
+
+.diagram__bar {
+  display: flex;
+  flex-direction: column-reverse;
+  width: rem(35px);
+  height: rem(290px);
+  margin-bottom: rem(15px);
+  background-color: $rtf_statistic_grey-blue;
+  border-radius: $rtf_big_radius;
+  overflow: hidden;
+
+  @include widthLessThan($mobile-rtf) {
+    width: rem(25px);
+  }
+}
+
+.diagram__bar-progress {
+  height: 100%;
+  transform-origin: bottom center;
+  transform: scaleY(0);
+  transition: 0.45s ease-in transform;
+  border-radius: 35px;
+}
+
+.diagram__item {
+  position: relative;
+}
+
+.diagram__item:nth-child(1) .diagram__bar-progress {
+  background-color: $rtf_statistic_blue;
+}
+
+.diagram__item:nth-child(2) .diagram__bar-progress {
+  background-color: $rtf_statistic_red;
+}
+
+.diagram__item:nth-child(3) .diagram__bar-progress {
+  background-color: $rtf_statistic_violet;
+}
+
+.diagram__item:nth-child(4) .diagram__bar-progress {
+  background-color: $rtf_statistic_green-blue;
+}
+
+.diagram__item:nth-child(5) .diagram__bar-progress {
+  background-color: $rtf_statistic_orange;
+}
+
+.diagram__item:nth-child(6) .diagram__bar-progress {
+  background-color: $rtf_statistic_green;
+}
+
+.diagram__count {
+  display: flex;
+  justify-content: center;
+
+  @include standardText($color:$rtf_grey);
+}
+
+// стили tooltip'a
+
+.tooltip-diagram {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: calc(190px);
+  padding: rem(25px 15px);
+  background-color: $rtf_text_grey;
+  border-radius: $rtf_xs_radius;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+// на мобилке обрезается тултип
+.diagram__item:first-child .tooltip-diagram,
+.diagram__item:last-child .tooltip-diagram {
+  @include widthLessThan($mobile-rtf) {
+    min-width: calc(100px);
+    max-width: calc(100px);
+  }
+}
+
+.tooltip-diagram__text {
+  @include standardText($color:$rtf_white);
+
+  @include widthLessThan($mobile-rtf) {
+    font-size: rem(14px);
+    word-break: break-all;
+  }
+}
+
+.tooltip-diagram .tooltip-diagram__text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: rem(-5px);
+  border-width: rem(5px);
+  border-style: solid;
+  border-color: $rtf_text_grey transparent transparent transparent;
+}
+
+.diagram__item:hover .tooltip-diagram {
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+}

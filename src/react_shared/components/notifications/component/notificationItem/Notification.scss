@@ -1,0 +1,29 @@
+@import '../../../../../react_shared/_utils/index';
+
+.notifications .notification {
+  position: relative;
+
+  @include actionButton($background: #161B22, $borderC: #999);
+
+  font-weight: 500;
+  text-align: center;
+  cursor: default;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 8px;
+  border: 0;
+  overflow: hidden;
+}
+
+.notifications .notification__close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+
+  @include textButton($size: 0, $weight: 400, $color: $lightGrey);
+}
+

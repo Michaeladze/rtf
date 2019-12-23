@@ -1,0 +1,154 @@
+@import "../../../react_shared/_utils/index";
+
+.rtf__common-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: $rtf_blue_grey;
+  cursor: default;
+
+  @include widthMoreThan($mobile-rtf) {
+    align-items: center;
+  }
+
+  @include widthLessThan($mobile-rtf) {
+    flex-direction: column;
+  }
+}
+
+.rtf__common-container.wide {
+  background: $rtf_default_gradient;
+
+  @include widthLessThan($mobile-rtf) {
+    background: $white;
+  }
+}
+
+.rtf__common-container--body {
+  display: flex;
+  height: 100%;
+  width: calc(100% - 100px);
+
+  @include widthLessThan($mobile-rtf) {
+    width: 100%;
+  }
+}
+
+.rtf__common-wrapper {
+  background: $rtf_default_gradient;
+
+  @include widthMoreThan($mobile-rtf) {
+    min-width: 400px;
+    width: 400px;
+    height: 100%;
+  }
+}
+
+.rtf__common-aside {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: rem(45px);
+  border-top-left-radius: $rtf_big_radius;
+  background-color: $rtf_blue_grey;
+  overflow-y: hidden;
+
+  @include widthLessThan($mobile-rtf) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(1px 1px 1px 1px);
+  }
+}
+
+.rtf__common-body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: $rtf_white;
+  border-top-left-radius: $rtf_big_radius;
+  overflow: hidden;
+
+  @include widthMoreThan($mobile-rtf) {
+    border-bottom-left-radius: $rtf_big_radius;
+  }
+
+  @include widthLessThan($mobile-rtf) {
+    border-radius: 0;
+  }
+}
+
+.rtf__common-content {
+  width: 100%;
+}
+
+.rtf__common-body.wide {
+  max-width: 100%;
+}
+
+.common-container__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(20px);
+}
+
+.common-container__header--sm {
+  display: none;
+
+  @include widthLessThan($mobile-rtf) {
+    display: block;
+  }
+}
+
+.common-container__title.one-line {
+  display: flex;
+  align-items: baseline;
+
+  .common-container__subtitle {
+    margin-left: rem(20px);
+    font-weight: 500;
+    font-size: rem(20px);
+  }
+}
+
+.common-container__title-text {
+  @include heading(h1);
+
+  line-height: 1.2;
+
+  @include widthMoreThan($mobile-rtf) {
+    white-space: pre-wrap;
+  }
+
+  @include widthLessThan($mobile-rtf) {
+    font-size: rem(25px);
+  }
+}
+
+.common-container__title.back {
+  display: flex;
+  align-items: center;
+}
+
+.common-container__subtitle {
+  @include standardText(18px, 400, $rtf_text_grey);
+
+  @include widthLessThan($mobile-rtf) {
+    font-size: rem(16px);
+    margin-top: 10px;
+  }
+}
+
+.common-container__user {
+  position: relative;
+  width: rem(50px);
+  height: rem(50px);
+  min-width: rem(50px);
+  cursor: pointer;
+
+  @include widthLessThan($mobile-rtf) {
+    display: none;
+  }
+}

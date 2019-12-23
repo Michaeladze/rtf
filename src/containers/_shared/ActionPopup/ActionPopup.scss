@@ -1,0 +1,73 @@
+@import '../../../react_shared/_utils/_index';
+
+.dialog-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  @include widthLessThan($mobile-rtf) {
+    overflow-x: hidden;
+  }
+}
+
+.dialog-wrapper {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  padding: rem(50px);
+  background-color: $rtf_white;
+  border-radius: 25px;
+
+  @include widthLessThan($mobile-rtf) {
+    padding: 30px;
+  }
+}
+
+.dialog__close-button {
+  position: absolute;
+  border: 0;
+  border-radius: 3px;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 42px;
+  background-color: $rtf_grey;
+  opacity: 0.3;
+  z-index: 3;
+}
+
+.dialog__header {
+  margin-bottom: rem(20px);
+}
+
+.dialog__title {
+  margin-bottom: rem(5px);
+
+  @include heading(h3);
+}
+
+.dialog__subtitle {
+  @include standardText(18px, 400, $rtf_text_grey);
+}
+
+/** animation */
+
+.transition-appear {
+  transform: translateY(100%);
+}
+
+.transition-appear-done {
+  transform: translateY(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.transition-exit {
+  transform: translateY(0);
+}
+
+.transition-exit-done {
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}

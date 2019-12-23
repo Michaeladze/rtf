@@ -1,0 +1,37 @@
+@import "../../../react_shared/_utils/index";
+
+.home__info {
+  height: 100%;
+  padding: rem(120px 80px);
+  background-color: $white;
+  background-image: url(../../../_assets/svg/home__svg.svg);
+  background-size: contain;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+
+  @media screen and (max-height: 768px) {
+    background-size: 82%;
+  }
+}
+
+.home__info-title {
+  @include heading(h1);
+
+  line-height: 1.2;
+
+  @include widthLessThan($desktopMiddle) {
+    @include heading(h2);
+  }
+}
+
+.home__info-description {
+  margin-top: rem(20px);
+  line-height: rem(40px);
+
+  @include standardText(22px, 400, $rtf_text_grey);
+
+  @include widthLessThan($desktopMiddle) {
+    font-size: rem(18px);
+    line-height: rem(30px);
+  }
+}

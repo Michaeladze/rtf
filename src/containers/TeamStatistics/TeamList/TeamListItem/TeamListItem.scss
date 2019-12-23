@@ -1,0 +1,103 @@
+@import '../../../../react_shared/_utils/index';
+
+.team-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+  padding: rem(30px 0 20px 0);
+  border-bottom: 1px solid $rtf_default_border;
+
+  @include widthLessThan($mobile-rtf) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: rem(20px 0);
+  }
+}
+
+.team-item__user {
+  max-width: 34%;
+  width: 100%;
+
+  @include widthLessThan($mobile-rtf) {
+    max-width: 100%;
+    margin-bottom: rem(10px);
+  }
+}
+
+.team-item__stat {
+  max-width: 15%;
+  width: 100%;
+  padding-left: rem(30px);
+
+  @include widthLessThan($mobile-rtf) {
+    max-width: 40%;
+    padding-left: 0;
+    margin-bottom: rem(15px);
+  }
+}
+
+.team-item__stack {
+  display: flex;
+  align-items: center;
+  max-width: 15%;
+  width: 100%;
+
+  span {
+    @include standardText(18px, 400, $rtf_text_grey);
+  }
+
+  @include widthLessThan($mobile-rtf) {
+    max-width: 100%;
+    margin-bottom: rem(15px);
+  }
+}
+
+.team-item__action {
+  max-width: 18%;
+  width: 100%;
+
+  @include widthLessThan($mobile-rtf) {
+    max-width: 100%;
+  }
+}
+
+.team-item__user .user-title__photo {
+  max-width: 70px;
+  min-width: 70px;
+  max-height: 70px;
+  min-height: 70px;
+  width: 100%;
+  margin-right: rem(20px);
+}
+
+.team-item__user .user-title__name {
+  padding-right: rem(24px);
+  font-size: rem(20px);
+  font-weight: 500;
+}
+
+.team-item__user .user-title__position {
+  @include widthLessThan($mobile-rtf) {
+    display: block;
+  }
+}
+
+.team-item__stat-count {
+  @include standardText(20px, 500, $rtf_black);
+
+  @include widthLessThan($mobile-rtf) {
+    margin-bottom: rem(5px);
+  }
+}
+
+.team-item__stat-description {
+  @include standardText($color: $rtf_text_grey);
+}
+
+.team-item__action .rtf__standard-button {
+  @include widthMoreThan($mobile-rtf) {
+    font-size: rem(16px);
+  }
+}

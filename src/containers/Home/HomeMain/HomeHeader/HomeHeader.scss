@@ -1,0 +1,90 @@
+@import "../../../../react_shared/_utils/index";
+
+.home__header {
+  display: flex;
+  align-items: flex-start;
+
+  @include widthLessThan($mobile-rtf) {
+    flex-flow: column-reverse;
+  }
+}
+
+.home__header-greetings {
+  @include heading(h1);
+
+  padding-right: rem(10px);
+  line-height: 1.1;
+  font-size: rem(40px);
+  letter-spacing: -0.3px;
+
+  @include widthLessThan($desktopMiddle) {
+    font-size: rem(20px);
+  }
+
+  @include widthLessThan($mobile-rtf) {
+    padding-right: 0;
+    font-size: 25px;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 50%;
+  }
+}
+
+.home__header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+
+  @include widthLessThan($mobile-rtf) {
+    width: 100%;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.header-actions__likes {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  background: $rtf_white;
+  box-shadow: $rtf_round_shadow;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header__likes-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(25%, -25%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $rtf_blue;
+
+  @include standardText(13px, 400, $rtf_white);
+}
+
+.home-actions__user {
+  width: rem(50px);
+  height: rem(50px);
+  min-width: rem(50px);
+  margin-left: rem(20px);
+  position: relative;
+  cursor: pointer;
+
+  @include widthLessThan($mobile-rtf) {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+}

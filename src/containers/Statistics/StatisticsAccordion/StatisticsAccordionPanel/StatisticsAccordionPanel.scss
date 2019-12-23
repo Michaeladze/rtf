@@ -1,0 +1,60 @@
+@import '../../../../react_shared/_utils/index';
+
+// CONTENT ACCORDION
+
+.statistic-accordion__wrap .accordion__content-wrap {
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.statistic-accordion__wrap .statistic-accordion__content-item {
+  padding: rem(0 25px 25px);
+
+  @include widthLessThan($mobile-rtf) {
+    padding: 0;
+    margin-bottom: rem(20px);
+  }
+}
+
+.statistic-accordion__content-item.no-popup {
+  cursor: default;
+  pointer-events: none;
+}
+
+.statistic-accordion__wrap .statistic-accordion__content-item:first-child {
+  padding: rem(25px);
+
+  @include widthLessThan($mobile-rtf) {
+    padding: rem(20px 0 0 0);
+  }
+}
+
+.accordion__content .indicator-progress__content,
+.accordion__content .indicator-progress__users {
+  @include widthLessThan($mobile-rtf) {
+    display: none;
+  }
+}
+
+// Стилидля списка внутри раскрытого аккардеона
+.accordion__content .indicator__rating {
+  @include widthLessThan($mobile-rtf) {
+    margin: 0;
+  }
+}
+
+.accordion__content .indicator-progress__title {
+  font-weight: 400;
+
+  @include widthLessThan($mobile-rtf) {
+    max-width: calc(100% - 2.5rem);
+    width: 100%;
+    padding: rem(0 0 0 20px);
+    margin-bottom: 0;
+    color: $rtf_blue;
+  }
+}
+
+.accordion__content .indicator-progress__arrow--mobile {
+  display: none;
+}

@@ -1,0 +1,384 @@
+@import 'variables';
+
+// ---------------------------------------------------------------------------------------------
+// пересчет из px в rem
+// пример использования: font-size: (16px)
+$rem-baseline: 16px !default;
+$rem-fallback: false !default;
+$rem-px-only: false !default;
+
+@function rem-separator($list, $separator: false) {
+  @if $separator == 'comma' or $separator == 'space' {
+    @return append($list, null, $separator);
+  }
+
+  @if function-exists('list-separator') == true {
+    @return list-separator($list);
+  }
+
+  // list-separator polyfill by Hugo Giraudel (https://sass-compatibility.github.io/#list_separator_function)
+  $test-list: ();
+
+  @each $item in $list {
+    $test-list: append($test-list, $item, space);
+  }
+
+  @return if($test-list == $list, space, comma);
+}
+
+@mixin rem-baseline($zoom: 100%) {
+  font-size: $zoom / 16px * $rem-baseline;
+}
+
+@function rem-convert($to, $values...) {
+  $result: ();
+  $separator: rem-separator($values);
+
+  @each $value in $values {
+    @if type-of($value) == 'number' and unit($value) == 'rem' and $to == 'px' {
+      $result: append($result, $value / 1rem * $rem-baseline, $separator);
+    }
+
+    @else if type-of($value) == 'number' and unit($value) == 'px' and $to == 'rem' {
+      $result: append($result, $value / $rem-baseline * 1rem, $separator);
+    }
+
+    @else if type-of($value) == 'list' {
+      $value-separator: rem-separator($value);
+      $value: rem-convert($to, $value...);
+      $value: rem-separator($value, $value-separator);
+      $result: append($result, $value, $separator);
+    }
+
+    @else {
+      $result: append($result, $value, $separator);
+    }
+  }
+
+  @return if(length($result) == 1, nth($result, 1), $result);
+}
+
+@function rem($values...) {
+  @if $rem-px-only {
+    @return rem-convert(px, $values...);
+  }
+
+  @else {
+    @return rem-convert(rem, $values...);
+  }
+}
+
+@mixin rem($properties, $values...) {
+  @if type-of($properties) == 'map' {
+    @each $property in map-keys($properties) {
+      @include rem($property, map-get($properties, $property));
+    }
+  }
+
+  @else {
+    @each $property in $properties {
+      @if $rem-fallback or $rem-px-only {
+        #{$property}: rem-convert(px, $values...);
+      }
+
+      @if not $rem-px-only {
+        #{$property}: rem-convert(rem, $values...);
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------------------------
+// Кнопки. По умолчанию синяя с белым текстом.
+@mixin actionButton($background: $softBlue, $borderC: $softBlue, $textColor: #fff) {
+  padding: rem(10px 15px);
+  min-width: rem(80px);
+  background: $background;
+  color: $textColor;
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  text-align: center;
+  border: 1px solid $borderC;
+  border-radius: $borderRadius;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:disabled {
+    //border: 1px solid $transparent;
+    //background-color: $borderColor;
+    cursor: not-allowed;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+// Просто кнопка, белая с чёрным текстом
+@mixin defaultButton() {
+  @include actionButton($white, $lightGrey, $darkGrey, $white);
+
+  &:hover:not(:disabled) {
+    color: $softBlue;
+    border-color: $softBlue;
+  }
+}
+
+// Текстовая кнопка
+@mixin textButton($size: 16px, $weight: 400, $color: $softBlue) {
+  outline: 0;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: rem($size);
+  font-weight: $weight;
+  color: $color;
+  cursor: pointer;
+}
+
+//Текст для заголовков, жирный темно-серый с опциональным размером
+@mixin titleText($size: 30px, $color: $darkGrey, $weight: 500, $letterSpacing: rem(0.4px)) {
+  font-size: rem($size);
+  font-weight: $weight;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: $letterSpacing;
+  color: $color;
+}
+
+// Текст для описаний и комментариев, светло-серый с опциональной жирностью
+@mixin descriptionText($size: 16px, $weight: 400, $color: $lightGrey) {
+  font-size: rem($size);
+  font-weight: $weight;
+  letter-spacing: rem(0.4px);
+  color: $color;
+}
+
+// Стандартный нежирный темно-серый текст (текст в копетенциях, информация в профиле)
+@mixin standardText($size: 16px, $weight: 400, $color: $darkGrey) {
+  font-size: rem($size);
+  font-weight: $weight;
+  font-style: normal;
+  color: $color;
+}
+
+// Абсолютное центрирование элемента
+@mixin absoluteCenter($horizontal: true, $vertical: true) {
+  position: absolute;
+
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+// ---------------------------------------------------------------------------------------------
+
+/* Стандартная разметка для текстового инпута
+<input name="textInput" type="text" class="text-input">
+*/
+
+// Текстовый инпут
+@mixin inputText($borderRadius: $borderRadius, $border: 1px solid $lightGrey, $bg: transparent, $outline-color: transparent) {
+  padding: rem(10px 15px);
+
+  @include standardText;
+
+  border: $border;
+  background-color: $bg;
+  border-radius: $borderRadius;
+
+  &:focus {
+    outline-style: none;
+    box-shadow: 0 0 0 rem(2px) $outline-color;
+    border-color: $lightGrey;
+  }
+}
+
+// Синий текст highlight
+@mixin boldHeading($color: $softBlue, $size: rem(20px)) {
+  color: $color;
+  font-size: $size;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.4px;
+}
+
+// ---------------------------------------------------------------------------------------------
+
+/* Стандартная разметка для текстового инпута с кнопкой поиска
+<form class="search">
+	<button class="search__action">
+    	<i class="far fa-search search__icon"></i>
+    </button>
+	<input name="inputName" type="text" class="search__input" placeholder="Поиск" autocomplete="off">
+</form>
+*/
+
+// Инпут для поиска
+@mixin inputSearch($border: 1px solid $lightGrey, $outline-color: transparent) {
+  padding: rem(10px 15px 10px 32px);
+
+  @include standardText();
+
+  border: $border;
+  border-radius: $borderRadius;
+
+  &:focus {
+    outline-style: none;
+    box-shadow: 0 0 0 rem(2px) $outline-color;
+  }
+}
+
+@mixin lightGreyText {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  color: $lightGrey;
+}
+
+// Кнопка для поиска
+@mixin buttonSearch() {
+  font-size: rem(14px);
+  color: $lightGrey;
+}
+
+// Неактивное состояние элемента
+@mixin disabled($opacity: 0.5) {
+  opacity: $opacity;
+  cursor: default;
+  pointer-events: none;
+}
+
+//------------------------------------------------------------------------------
+// Адаптивность
+//------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------
+// Функция для вычисления занчения, в зависимости от минимального и
+// максимального breakpoint`а
+//
+// $minWidth - минимальная ширина
+// $maxWidth - максимальная ширина
+//
+// $valueMin - минимальное значение
+// $valueMax - максимальное значение
+//------------------------------------------------------------------------------
+@function calcBetweenWidth($widthMin, $widthMax, $valueMin, $valueMax) {
+  @return calc(#{$valueMin} * 1px + (#{$valueMax} - #{$valueMin}) * (100vw - #{$widthMin} * 1px) / (#{$widthMax} - #{$widthMin}) );
+}
+
+//------------------------------------------------------------------------------
+// Миксина для указания свойств до определённой ширины
+//
+// $maxWidth - максимальная ширина, по умолчанию из неё вычитается 1px,
+// чтобы можно было прокидывать breakpoint`ы, например от 320 до 760 и от 768 до 1024
+// и они не будут пересекаться
+//
+// $isEndBeforeMaxWidth - флаг, чтобы убрать поведение, описанное выше
+//------------------------------------------------------------------------------
+@mixin widthLessThan($maxWidth: 8192px, $isEndBeforeMaxWidth: true) {
+  // переводим значения в пиксели
+  $maxWidth: $maxWidth * 1px;
+
+  @if $isEndBeforeMaxWidth {
+    $maxWidth: $maxWidth - 1px;
+  }
+
+  @media screen and (max-width: $maxWidth) { @content; }
+}
+
+//------------------------------------------------------------------------------
+// Миксина для указания свойств после определённой ширины
+//
+// $maxWidth - минимальная ширина, от которой будут применяться свойства
+//------------------------------------------------------------------------------
+@mixin widthMoreThan($minWidth: 1px) {
+  // переводим значения в пиксели
+  $minWidth: $minWidth * 1px;
+
+  @media screen and (min-width: $minWidth) { @content; }
+}
+
+//------------------------------------------------------------------------------
+// Миксина для указания свойств между двумя breakpoint
+//
+// $minWidth - минимальная ширина
+//
+// $maxWidth - максимальная ширина, по умолчанию из неё вычитается 1px,
+// чтобы можно было прокидывать breakpoint`ы, например от 320 до 760 и от 768 до 1024
+// и они не будут пересекаться
+//
+// $isEndBeforeMaxWidth - флаг, чтобы убрать поведение, описанное выше
+//------------------------------------------------------------------------------
+@mixin widthBetween($minWidth: 1, $maxWidth: 8192, $isEndBeforeMaxWidth: true) {
+  // переводим значения в пиксели
+  $minWidth: $minWidth * 1px;
+  $maxWidth: $maxWidth * 1px;
+
+  @if $isEndBeforeMaxWidth {
+    $maxWidth: $maxWidth - 1px;
+  }
+
+  @media screen and (min-width: $minWidth) and (max-width: $maxWidth) { @content; }
+}
+
+//------------------------------------------------------------------------------
+// Миксина для динамического изменения свойства между двумя breakpoint`ами
+//
+// $property - свойство, которое надо передать. Пр: width, font-size
+//
+// $minWidth - минимальная ширина
+// $maxWidth - максимальная ширина
+//
+// $valueMin - минимальное значение
+// $valueMax - максимальное значение
+//
+// $isWorkBefore - будет ли работать свойство после максимальной ширины?
+// После максимальной ширины выставится максимальное значение
+// По умолчанию не выставляется
+//
+// $isWorkAfter - будет ли работать свойство до минимальной ширины?
+// До минимальной ширины выставится минимальное значение
+// По умолчанию не выставляется.
+//------------------------------------------------------------------------------
+@mixin propertyBetween($property, $widthMin, $widthMax, $valueMin, $valueMax, $isWorkBefore: false, $isWorkAfter: false) {
+  #{$property}: $valueMin * 1px;
+
+  @include widthBetween($widthMin, $widthMax) {
+    #{$property}: calcbetweenwidth($widthMin, $widthMax, $valueMin, $valueMax);
+  }
+
+  @if $isWorkBefore {
+    @include widthLessThan($widthMin) {
+      #{$property}: $valueMin * 1px;
+    }
+  }
+
+  @if $isWorkAfter {
+    @include widthMoreThan($widthMax) {
+      #{$property}: $valueMax * 1px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import '../../../../react_shared/_utils/index';
+
+.search-user {
+  display: flex;
+  align-items: center;
+  padding: rem(20px 0);
+}
+
+.search-user__image {
+  max-width: rem(50px);
+  width: 100%;
+  height: rem(50px);
+}
+
+.search-user__details {
+  flex: 1 0 calc(100% - 6.25rem);
+  padding: rem(0 15px);
+}
+
+.search-user__name {
+  @include standardText(20px, 500, $rtf_black);
+}
+
+.search-user__position {
+  @include standardText($color: $rtf_text_grey);
+}
+
+.search-user__mark {
+  max-width: rem(50px);
+  width: 100%;
+}
+
+.ant-btn.search-user__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: rem(50px);
+  color: $white;
+  font-weight: 500;
+  background-color: $rtf_blue;
+  border: 0;
+}
+
+.ant-btn.search-user__action:hover,
+.ant-btn.search-user__action:focus {
+  border: 0;
+}
+
+.search-icon {
+  stroke: $rtf_white;
+  width: 25px;
+  height: 25px;
+}
+
+.search-icon--plus {
+  transform: scale(1.5);
+}

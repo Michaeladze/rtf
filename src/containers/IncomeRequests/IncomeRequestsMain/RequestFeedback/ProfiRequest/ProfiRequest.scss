@@ -1,0 +1,25 @@
+@import '../../../../../react_shared/_utils/index';
+
+.profi__title {
+  @include standardText(25px, 500, $rtf_black);
+  line-height: 35px;
+}
+
+.profi__description {
+  margin-top: 15px;
+  @include standardText(20px, 400, $rtf_text_grey);
+  line-height: 25px;
+}
+
+.profi__questions {
+  margin-top: 30px;
+}
+
+.profi__show-form {
+  max-width: 334px;
+  margin-top: 30px;
+}
+
+.profi__expertise-wrapper {
+  margin-top: 35px;
+}

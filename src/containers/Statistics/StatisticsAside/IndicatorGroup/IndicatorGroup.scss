@@ -1,0 +1,28 @@
+@import "../../../../react_shared/_utils/index";
+
+.indicator-group__card {
+  padding: rem(25px);
+  margin-bottom: rem(32px);
+  background-color: $rtf_white;
+  border-radius: $rtf_small_radius;
+  box-shadow: $rtf_default_box_shadow;
+
+  @include widthLessThan($mobile-rtf) {
+    margin-right: rem(16px);
+    height: rem(340px);
+  }
+}
+
+.indicator-group__card-name {
+  margin-bottom: rem(10px);
+
+  @include heading(h4, $weight: 500);
+}
+
+.indicator-group__list {
+  margin-bottom: rem(10px);
+}
+
+.indicator__help-text {
+  @include standardText($color: $rtf_text_grey, $size: 14px);
+}

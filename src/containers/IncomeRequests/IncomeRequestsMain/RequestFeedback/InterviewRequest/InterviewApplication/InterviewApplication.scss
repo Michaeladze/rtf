@@ -1,0 +1,68 @@
+@import '../../../../../../react_shared/_utils/index';
+
+.application {
+  display: flex;
+  padding: 30px 40px;
+  border-radius: 18px;
+  box-shadow: $rtf_default_box_shadow;
+}
+
+.application__col {
+  width: 50%;
+}
+
+.application__block {
+  margin-top: 10px;
+  @include standardText(16px, 400, $rtf_text_grey);
+  line-height: 20px;
+}
+
+.application__emails {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.application__link {
+  @include standardText(16px, 400, $rtf_blue);
+}
+
+.application__expertise {
+  margin-top: 15px;
+}
+
+.application__expertise .expertise__label {
+  font-size: 16px;
+  color: $rtf_text_grey;
+}
+
+.application__title {
+  @include standardText(20px, 500, $rtf_black);
+}
+
+.application__instrument {
+  padding: 10px 0;
+  border-bottom: 1px solid $rtf_default_border;
+}
+
+.application__instrument:last-of-type {
+  border-bottom: 0;
+}
+
+.application__instrument-label {
+  @include standardText(16px, 400, $rtf_text_grey);
+}
+
+.application__instrument-value {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.instrument-value--text {
+  @include standardText(18px, 500, $rtf_black);
+}
+
+.instrument-value--more {
+  @include standardText(18px, 500, $rtf_blue);
+}

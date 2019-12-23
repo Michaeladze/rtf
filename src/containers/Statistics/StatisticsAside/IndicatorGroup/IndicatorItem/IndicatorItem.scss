@@ -1,0 +1,45 @@
+@import "../../../../../react_shared/_utils/index";
+
+.indicators__title {
+  margin-bottom: rem(10px);
+
+  @include standardText($color: $rtf_text_grey);
+}
+
+.indicators__list {
+  margin-bottom: rem(25px);
+}
+
+.indicators:last-child .indicators__list {
+  margin-bottom: 0;
+}
+
+.indicator-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(15px);
+}
+
+.indicator-item:last-child {
+  margin-bottom: 0;
+}
+
+.indicator-item__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: rem(40px);
+  height: rem(40px);
+  margin-right: rem(15px);
+  border-radius: 50%;
+  background-color: $rtf_blue_grey;
+
+  @include standardText($color: $rtf_blue);
+}
+
+.indicator-item__name {
+  @include standardText($weight: 500);
+
+  word-break: break-word;
+  hyphens: auto;
+}

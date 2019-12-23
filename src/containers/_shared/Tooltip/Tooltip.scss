@@ -1,0 +1,42 @@
+@import "../../../react_shared/_utils/index";
+
+.tooltip {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 16px);
+  background: $rtf_white;
+  border-radius: rem(8px);
+  box-shadow: 0 15px 30px rgba(0, 2, 82, 0.15);
+  z-index: 11;
+}
+
+.tooltip-right {
+  right: auto;
+  left: 0;
+}
+
+.tooltip__outside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+//.tooltip::after {
+//  content: '';
+//  position: absolute;
+//  right: rem(20px);
+//  top: rem(-6px);
+//  display: block;
+//  width: rem(12px);
+//  height: rem(12px);
+//  background: $rtf_white;
+//  transform: rotate(45deg);
+//}
+//
+//.tooltip.tooltip-right::after {
+//  right: auto;
+//  left: rem(20px);
+//}

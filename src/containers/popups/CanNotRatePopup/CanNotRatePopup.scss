@@ -1,0 +1,78 @@
+@import "../../../react_shared/_utils/index";
+
+.can-not-rate__title {
+  @include heading(h3);
+
+  margin-bottom: rem(25px);
+}
+
+.can-not-rate__hint {
+  display: none;
+
+  @include standardText($size: 18px, $weight: 500);
+}
+
+.can-not-rate__input-group {
+  width: 100%;
+}
+
+.can-not-rate__input {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  height: rem(50px);
+
+  @include inputText($borderRadius: $rtf_xs_radius, $border: 1px solid $rtf_form_border);
+}
+
+.can-not-rate__input--text {
+  height: 100%;
+  margin-top: 30px;
+}
+
+/** Radio styles */
+.custom-radio {
+  display: flex;
+  align-items: center;
+  padding: 15px 18px;
+  border: 1px solid $rtf_form_border;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.custom-radio:last-of-type {
+  margin-bottom: 0;
+}
+
+.custom-radio__text {
+  @include standardText(18px, 400, $rtf_black);
+}
+
+.custom-radio__circle {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $rtf_grey;
+  border-radius: 50%;
+  background: $rtf_white;
+}
+
+.custom-radio.active {
+  background: $rtf_blue_grey;
+}
+
+.custom-radio.active .custom-radio__text {
+  color: $rtf_blue;
+}
+
+.custom-radio.active .custom-radio__circle {
+  border: 7px solid $rtf_blue;
+}
+
+.can-not-rate__buttons {
+  margin-top: 15px;
+}

@@ -1,0 +1,112 @@
+@import "../../../../react_shared/_utils/index";
+
+.history-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(40px);
+}
+
+.history-select {
+  margin-right: rem(20px);
+
+  @include widthLessThan($mobile-rtf) {
+    display: none;
+  }
+}
+
+.history-select,
+.history-search {
+  max-width: rem(210px);
+}
+
+.history-search {
+  @include widthLessThan($mobile-rtf) {
+    width: 100%;
+    max-width: initial;
+  }
+}
+
+.history-search .search__input {
+  border-radius: $rtf_xs_radius;
+  border-width: 1px;
+}
+
+// ANT DESIGN
+//______________________________________________________________________________________________________________________
+.history-select .ant-select {
+  font-family: 'SBSansDisplay', sans-serif !important;
+  font-size: 16px !important;
+  color: $rtf_black !important;
+}
+
+.history-select .ant-select-selection--single {
+  height: rem(42px) !important;
+}
+
+.history-select .ant-select-selection {
+  display: flex !important;
+  align-items: center !important;
+  border-radius: rem(10px) !important;
+}
+
+.history-select .ant-select-focused .ant-select-selection,
+.history-select .ant-select-selection:focus,
+.history-select .ant-select-selection:active {
+  border-color: $rtf_blue !important;
+  box-shadow: none !important;
+}
+
+.history-select .ant-select-selection__rendered {
+  overflow: hidden;
+}
+
+// ant Design DROPDOWN ARROW
+//______________________________________________________________________________________________________________________
+.history-select .ant-select-arrow .ant-select-arrow-icon {
+  display: none !important;
+}
+
+.history-select .ant-select-arrow {
+  border: 4px solid transparent;
+  border-top: 4px solid;
+  border-right: 4px solid;
+  transform: rotate(135deg);
+  color: $rtf_grey !important;
+}
+
+// ant Design DROPDOWN SELECT
+//______________________________________________________________________________________________________________________
+
+.history-select .ant-select-arrow .ant-select-arrow-icon {
+  display: none !important;
+}
+
+.history-select .ant-select-arrow {
+  border: 4px solid transparent;
+  border-top: 4px solid;
+  border-right: 4px solid;
+  transform: rotate(135deg);
+  color: $rtf_grey !important;
+}
+
+.history-select__dropdown.ant-select-dropdown-menu-item {
+  padding: rem(10px) !important;
+  border-bottom: 1px solid $rtf_default_border;
+}
+
+.history-select__dropdown.ant-select-dropdown-menu-item:last-child {
+  border-bottom: none;
+}
+
+.history-select__dropdown.ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+  background-color: transparent !important;
+}
+
+.history-select__dropdown.ant-select-dropdown-menu-item-selected {
+  font-weight: normal !important;
+  color: $rtf_blue !important;
+}
+
+.history-select__dropdown.ant-select-dropdown-menu-item:hover {
+  background-color: transparent !important;
+}

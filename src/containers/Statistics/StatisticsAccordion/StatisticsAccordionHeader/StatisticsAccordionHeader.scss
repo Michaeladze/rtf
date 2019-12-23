@@ -1,0 +1,123 @@
+@import '../../../../react_shared/_utils/index';
+
+// HEADER ACCORDION
+
+.statistics-accordion-header {
+  display: flex;
+  align-items: center;
+  padding: rem(25px);
+  border-top: 1px solid $rtf_default_border;
+
+  @include widthLessThan($mobile-rtf) {
+    padding: rem(15px 0);
+  }
+}
+
+.active .statistics-accordion-header {
+  @include widthLessThan($mobile-rtf) {
+    border-bottom: 4px solid $rtf-separate_grey;
+  }
+}
+
+.statistic-accordion__wrap .accordion__header.active {
+  background-color: $rtf_white;
+  box-shadow: $rtf_default_box_shadow;
+  border-bottom-right-radius: $rtf_xs_radius;
+  border-bottom-left-radius: $rtf_xs_radius;
+
+  @include widthLessThan($mobile-rtf) {
+    box-shadow: none;
+    border-bottom: 4px solid transparent;
+    border-radius: 0;
+  }
+}
+
+.accordion:first-child .accordion__header.active {
+  border-radius: $rtf_xs_radius;
+}
+
+.accordion:first-child .statistics-accordion-header {
+  border-top-color: transparent;
+}
+
+.statistics-accordion-header .indicator__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  height: 100%;
+  width: 100%;
+  margin-right: rem(20px);
+  border-radius: 50%;
+  color: $rtf_white;
+
+  @include widthLessThan($mobile-rtf) {
+    min-width: 45px;
+    max-width: 45px;
+    min-height: 45px;
+    max-height: 45px;
+  }
+}
+
+.accordion .statistics-accordion-header .indicator-rating__number {
+  @include standardText($size: 18px, $color: $rtf_white);
+}
+
+.accordion:first-child .statistics-accordion-header .indicator__rating {
+  background-color: $rtf_statistic_blue;
+}
+
+.accordion:nth-child(2) .statistics-accordion-header .indicator__rating {
+  background-color: $rtf_statistic_red;
+}
+
+.accordion:nth-child(3) .statistics-accordion-header .indicator__rating {
+  background-color: $rtf_statistic_violet;
+}
+
+.accordion:nth-child(4) .statistics-accordion-header .indicator__rating {
+  background-color: $rtf_statistic_green-blue;
+}
+
+.accordion:nth-child(5) .statistics-accordion-header .indicator__rating {
+  background-color: $rtf_statistic_orange;
+}
+
+.accordion:nth-child(6) .statistics-accordion-header .indicator__rating {
+  background-color: $rtf_statistic_green;
+}
+
+// arrow в мобильной вер.
+.indicator-progress__arrow--mobile {
+  @include widthLessThan($mobile-rtf) {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid $rtf_blue;
+    transition: transform 0.3s ease-in, color 0.3s ease-in;
+  }
+}
+
+.active .indicator-progress__arrow--mobile {
+  @include widthLessThan($mobile-rtf) {
+    border-top: 7px solid $rtf_grey;
+    transform: rotate(180deg);
+  }
+}
+
+.statistics-accordion-header .indicator__rating {
+  @include widthLessThan($mobile-rtf) {
+    margin-right: 0;
+  }
+}
+
+.statistics-accordion-header .indicator-progress__title {
+  @include widthLessThan($mobile-rtf) {
+    max-width: calc(100% - 64px);
+    padding: rem(0 10px 0 15px);
+  }
+}

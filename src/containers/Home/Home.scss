@@ -1,0 +1,28 @@
+@import "../../react_shared/_utils/index";
+
+.rtf__home {
+  height: 100%;
+  display: flex;
+  background-color: $white;
+}
+
+.rtf__info-wrapper {
+  width: 50%;
+  height: 100%;
+
+  @include widthLessThan($mobile-rtf) {
+    display: none;
+  }
+}
+
+.rtf__main-wrapper {
+  width: 50%;
+  height: 100%;
+  border-radius: $rtf_big_radius 0 0 $rtf_big_radius;
+  background: $rtf_blue_grey;
+
+  @include widthLessThan($mobile-rtf) {
+    width: 100%;
+    border-radius: 0;
+  }
+}

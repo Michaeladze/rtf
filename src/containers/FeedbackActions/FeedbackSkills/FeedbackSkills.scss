@@ -1,0 +1,37 @@
+@import "../../../react_shared/_utils/index";
+
+.feedback-skills__items {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: rem(0 -35px);
+
+  @include widthLessThan($mobile-rtf) {
+    margin: 0;
+  }
+}
+
+.feedback-skills__item {
+  display: flex;
+  max-width: 50%;
+  width: 100%;
+  min-height: 100%;
+  padding: rem(5px 35px);
+
+  @include widthLessThan($mobile-rtf) {
+    max-width: 100%;
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-bottom: rem(10px);
+    }
+  }
+}
+
+.feedback-skills__show-more {
+  margin-bottom: rem(20px);
+}
+
+.feedback-skills__show-more .rtf__standard-button {
+  color: $rtf_blue;
+}

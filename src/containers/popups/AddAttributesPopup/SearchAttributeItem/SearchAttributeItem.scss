@@ -1,0 +1,97 @@
+@import '../../../../react_shared/_utils/index';
+
+.search__attribute {
+  width: 50%;
+  padding: rem(0 10px);
+  margin-bottom: rem(20px);
+
+  @include widthLessThan($mobile-rtf) {
+    width: 100%;
+  }
+}
+
+.search-attribute {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100%;
+  padding: rem(20px);
+  border: 1px solid $rtf_default_border;
+  border-radius: $rtf_xs_radius;
+
+  @include widthLessThan($mobile-rtf) {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+.search-attribute:nth-child(2) {
+  margin-right: 0;
+}
+
+.search-attribute:hover,
+.check .search-attribute {
+  box-shadow: $rtf_default_box_shadow;
+  transition: 0.3s ease-in box-shadow;
+}
+
+.search-attribute__name {
+  padding-bottom: rem(35px);
+
+  @include standardText();
+
+  word-break: break-word;
+  hyphens: auto;
+  transition: 0.3s ease-in color;
+
+  @include widthLessThan($mobile-rtf) {
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.search-attribute:hover .search-attribute__name {
+  color: $rtf_blue;
+}
+
+.search-attribute__details {
+  width: 100%;
+
+  @include widthLessThan($mobile-rtf) {
+    width: auto;
+    padding-right: 14px;
+  }
+}
+
+.search-attribute__mark {
+  position: absolute;
+  bottom: rem(20px);
+  right: rem(20px);
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+
+  @include widthLessThan($mobile-rtf) {
+    position: static;
+    margin-left: auto;
+  }
+}
+
+.ant-btn.search-attribute__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: $rtf_blue;
+  border: none;
+}
+
+.ant-btn-round.search-attribute__action {
+  padding: 0;
+}
+
+.search-attribute__icon {
+  stroke: $rtf_white;
+}

@@ -1,0 +1,64 @@
+@import "../../../react_shared/_utils/index";
+
+.users-preloader {
+  display: flex;
+  align-items: center;
+
+  @include widthLessThan($mobile-rtf) {
+    margin: 0 30px;
+  }
+}
+
+.user-preloader {
+  max-width: 85px;
+  min-width: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-preloader__image {
+  width: 70px;
+  min-width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $rtf-grey;
+  animation: ease-in-out 1s vibrate infinite;
+
+  @include widthLessThan($desktopMiddle) {
+    width: 64px;
+    min-width: 64px;
+    height: 64px;
+  }
+}
+
+.user-preloader__name {
+  margin-top: 12px;
+
+  @include standardText(14px, 500, transparent);
+
+  font-size: 14px;
+  line-height: rem(18px);
+  text-align: center;
+  animation: ease-in-out 2s vibrate infinite;
+
+  @include widthLessThan($mobile-rtf) {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+
+.user-preloader__name span:first-of-type {
+  background-color: $rtf_grey;
+  border-radius: 6px;
+}
+
+@keyframes vibrate {
+  0% { opacity: 0.3 }
+  50% { opacity: 0.5 }
+  100% { opacity: 0.3 }
+}

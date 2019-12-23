@@ -1,0 +1,11 @@
+@import "../../react_shared/_utils/index";
+
+.show-more__text,
+.show-more__title {
+  @include standardText($size:18px);
+}
+
+.show-more__title {
+  font-weight: 500;
+  cursor: pointer;
+}

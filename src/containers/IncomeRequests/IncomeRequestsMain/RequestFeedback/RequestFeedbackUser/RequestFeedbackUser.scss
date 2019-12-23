@@ -1,0 +1,19 @@
+@import "../../../../../react_shared/_utils/index";
+
+.feedback-user__header {
+  margin-bottom: rem(30px);
+
+  @include widthLessThan($mobile-rtf) {
+    margin-bottom: rem(20px);
+  }
+}
+
+.feedback-user__comment {
+  max-width: 45%;
+  margin-bottom: rem(45px);
+
+  @include widthLessThan($mobile-rtf) {
+    max-width: 100%;
+    margin-bottom: rem(20px);
+  }
+}

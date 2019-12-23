@@ -1,0 +1,35 @@
+@import "../../../react_shared/_utils/index";
+
+.info-message {
+  position: fixed;
+  opacity: 0;
+  left: 50%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: calc(100% - 30px);
+  width: 100%;
+  transform: translateX(-50%) translateY(100%);
+  z-index: 5;
+
+  &.show {
+    transform: translateX(-50%) translateY(-1.5rem);
+  }
+}
+
+.info-message__inner {
+  padding: rem(5px 32px);
+  border-radius: rem(45px);
+  background-color: rgba($rtf_black, 0.5);
+
+  @include widthLessThan($mobile-rtf) {
+    padding: rem(5px 16px);
+  }
+}
+
+.info-message__text {
+  @include standardText($color: $white, $weight: 500);
+
+  line-height: 1.25;
+}

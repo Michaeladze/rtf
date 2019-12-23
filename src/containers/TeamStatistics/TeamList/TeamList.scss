@@ -1,0 +1,9 @@
+@import '../../../react_shared/_utils/index';
+
+.team-list {
+  padding-top: rem(5px);
+
+  @include widthLessThan($mobile-rtf) {
+    padding-bottom: 100px;
+  }
+}

@@ -1,0 +1,9 @@
+@import "../../../react_shared/_utils/index";
+
+.feedback-actions {
+  position: relative;
+
+  @include widthLessThan($mobile-rtf) {
+    padding-bottom: 180px;
+  }
+}

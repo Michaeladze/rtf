@@ -1,0 +1,110 @@
+@import "../../../../react_shared/_utils/index";
+
+.statistics__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(50px);
+
+  @include widthLessThan($mobile-rtf) {
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: rem(20px);
+    order: 2;
+  }
+}
+
+.statistics__description {
+  display: flex;
+  flex-direction: column;
+
+  @include widthLessThan($mobile-rtf) {
+    display: none;
+  }
+}
+
+.statistics__title {
+  margin-bottom: rem(5px);
+
+  @include heading(h5, $weight: 500);
+}
+
+.statistics__subtitle {
+  @include standardText($size: 18px, $color: $rtf_text_grey);
+}
+
+.statistics__buttons {
+  display: flex;
+}
+
+.statistics__buttons .rtf__standard-button {
+  font-size: rem(16px);
+
+  @include widthLessThan($mobile-rtf) {
+    font-size: rem(14px);
+  }
+}
+
+.statistics__button.active .rtf__standard-button {
+  background-color: $rtf_blue;
+  border-color: $rtf_blue;
+  color: $rtf_white;
+}
+
+.statistics__button:not(:last-child) {
+  margin-right: rem(10px);
+}
+
+// Фильтр в мобильной версии
+.statistics__toggle {
+  @include textButton();
+}
+
+.statistics__icon {
+  fill: $rtf_grey;
+  transition: 0.3s ease-in fill;
+}
+
+.statistics__icon--active {
+  fill: $rtf_blue;
+}
+
+.statistics__filter {
+  max-width: 100%;
+  width: 100%;
+  margin-top: rem(20px);
+  animation: 0.3s forwards showFilter;
+}
+
+.statistics__filter.hide {
+  animation: 0.3s forwards hideFilter;
+}
+
+.statistics__filter .search {
+  width: 100%;
+}
+
+@keyframes showFilter {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hideFilter {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+}

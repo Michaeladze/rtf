@@ -1,0 +1,93 @@
+@import '../../../../../react_shared/_utils/index';
+
+.home__user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.home__user-image {
+  width: rem(70px);
+  min-width: rem(70px);
+  height: rem(70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  @include widthLessThan($desktopMiddle) {
+    width: 64px;
+    min-width: 64px;
+    height: 64px;
+  }
+}
+
+.home__user-image.home__user-image--response {
+  @include rtf_orange-pink_gradient;
+}
+
+.home__user-image.home__user-image--request {
+  background: $rtf_default_gradient;
+}
+
+.home__user-image--response > .rtf__user-image,
+.home__user-image--request > .rtf__user-image {
+  background-color: $rtf_white;
+  width: rem(54px);
+  min-width: rem(54px);
+  height: rem(54px);
+  border: 4px solid $rtf_blue_grey;
+  box-sizing: content-box;
+
+  @include widthLessThan($desktopMiddle) {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+  }
+}
+
+.home__user-image--arrow {
+  background-color: $rtf_white;
+  width: rem(54px);
+  min-width: rem(54px);
+  height: rem(54px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: $rtf_default_box_shadow;
+
+  @include widthLessThan($desktopMiddle) {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+  }
+}
+
+.home__user-image--arrow svg path {
+  fill: $rtf_text_grey;
+  transition: 0.3s ease-in fill;
+}
+
+.home__user-image--arrow:hover svg path {
+  fill: $rtf_blue;
+}
+
+.home__user-name {
+  margin-top: 12px;
+
+  @include standardText(14px, 500, $rtf_black);
+
+  font-size: 14px;
+  line-height: rem(18px);
+  text-align: center;
+  word-break: break-word;
+  hyphens: auto;
+
+  @include widthLessThan($mobile-rtf) {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,63 @@
+@import "../../../react_shared/_utils/index";
+
+.search-block {
+  position: relative;
+  max-width: rem(375px);
+  width: 100%;
+}
+
+.search-block__results {
+  position: absolute;
+  left: 0;
+  top: rem(50px);
+  width: 100%;
+  max-height: rem(313px);
+  padding: rem(24px);
+  background-color: $white;
+  box-shadow: $rtf_default_box_shadow;
+  border-radius: $rtf_small_radius;
+  overflow: auto;
+  z-index: 5;
+
+  @include widthLessThan($mobile-rtf) {
+    z-index: 6000;
+  }
+}
+
+.search-block__item {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.search-block__item:not(:last-child) {
+  margin-bottom: rem(15px);
+}
+
+.search-block__image {
+  max-width: rem(40px);
+  min-width: rem(40px);
+  height: rem(40px);
+}
+
+.search__info {
+  padding-left: rem(16px);
+}
+
+.search-block__name {
+  @include standardText(18px, 500, $rtf_black);
+
+  transition: 0.3s ease-in color;
+}
+
+.search-block__position {
+  margin-top: 4px;
+
+  @include standardText(16px, 400, $rtf_text_grey);
+}
+
+.search-block__item:hover .search-block__name {
+  color: $rtf_blue;
+}
