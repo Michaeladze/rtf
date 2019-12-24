@@ -20,6 +20,42 @@
 		E5B3C13A239AB11700C7E00F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B3C138239AB11700C7E00F /* LaunchScreen.storyboard */; };
 		E5B3C144239D093300C7E00F /* UserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */; };
 		E5C5AB5E23B0C1AB00A64161 /* UserLikePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C5AB5D23B0C1AB00A64161 /* UserLikePopup.swift */; };
+		EAD0CBDF23B2A7CF0078028A /* store.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBDE23B2A7CF0078028A /* store.swift */; };
+		EAD0CBE123B2A9860078028A /* devToolsMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE023B2A9860078028A /* devToolsMiddleware.swift */; };
+		EAD0CBE323B2ABB30078028A /* users.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE223B2ABB20078028A /* users.actions.swift */; };
+		EAD0CBE523B2AD110078028A /* users.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE423B2AD110078028A /* users.reducer.swift */; };
+		EAD0CBE723B2B3A70078028A /* boss.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE623B2B3A70078028A /* boss.actions.swift */; };
+		EAD0CBE923B2B4150078028A /* boss.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE823B2B4150078028A /* boss.reducer.swift */; };
+		EAD0CBEB23B2BC930078028A /* comparison.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBEA23B2BC930078028A /* comparison.actions.swift */; };
+		EAD0CBED23B2BCA10078028A /* comparison.reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBEC23B2BCA10078028A /* comparison.reducers.swift */; };
+		EAD0CBEF23B2C2E70078028A /* feedbackProps.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBEE23B2C2E70078028A /* feedbackProps.actions.swift */; };
+		EAD0CBF123B2C3E90078028A /* feedbackProps.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBF023B2C3E90078028A /* feedbackProps.reducer.swift */; };
+		EAD0CBF323B2C6B30078028A /* message.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBF223B2C6B30078028A /* message.actions.swift */; };
+		EAD0CBF523B2C6ED0078028A /* message.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBF423B2C6ED0078028A /* message.reducer.swift */; };
+		EAD0CBF723B2C7F20078028A /* requestRating.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBF623B2C7F20078028A /* requestRating.actions.swift */; };
+		EAD0CBF923B2C8270078028A /* requestRating.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBF823B2C8270078028A /* requestRating.reducer.swift */; };
+		EAD0CBFB23B2CA470078028A /* statistics.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBFA23B2CA470078028A /* statistics.actions.swift */; };
+		EAD0CBFD23B2CA560078028A /* statistics.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBFC23B2CA560078028A /* statistics.reducer.swift */; };
+		EAD0CBFF23B2CC2F0078028A /* subordinates.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBFE23B2CC2F0078028A /* subordinates.actions.swift */; };
+		EAD0CC0123B2CC390078028A /* subordinates.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC0023B2CC390078028A /* subordinates.reducer.swift */; };
+		EAD0CC0323B2CD400078028A /* teamInfo.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC0223B2CD400078028A /* teamInfo.actions.swift */; };
+		EAD0CC0523B2CD4F0078028A /* teamInfo.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC0423B2CD4F0078028A /* teamInfo.reducer.swift */; };
+		EAD0CC0723B2CE670078028A /* thanks.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC0623B2CE670078028A /* thanks.actions.swift */; };
+		EAD0CC0923B2CE790078028A /* thanks.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC0823B2CE790078028A /* thanks.reducer.swift */; };
+		EAD0CC0B23B2CFB60078028A /* usersAll.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC0A23B2CFB60078028A /* usersAll.actions.swift */; };
+		EAD0CC0D23B2CFC50078028A /* usersAll.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC0C23B2CFC50078028A /* usersAll.reducer.swift */; };
+		EAD0CC0F23B2D1780078028A /* usersFavourite.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC0E23B2D1780078028A /* usersFavourite.actions.swift */; };
+		EAD0CC1123B2D1890078028A /* usersFavourite.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC1023B2D1890078028A /* usersFavourite.reducer.swift */; };
+		EAD0CC1323B2D2FE0078028A /* usersHistory.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC1223B2D2FE0078028A /* usersHistory.actions.swift */; };
+		EAD0CC1523B2D30E0078028A /* usersHistory.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC1423B2D30E0078028A /* usersHistory.reducer.swift */; };
+		EAD0CC1723B2D48C0078028A /* usersInbox.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC1623B2D48C0078028A /* usersInbox.reducer.swift */; };
+		EAD0CC1923B2D4960078028A /* usersInbox.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC1823B2D4960078028A /* usersInbox.actions.swift */; };
+		EAD0CC1B23B2D6460078028A /* usersRecent.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC1A23B2D6460078028A /* usersRecent.actions.swift */; };
+		EAD0CC1D23B2D6530078028A /* usersRecent.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC1C23B2D6530078028A /* usersRecent.reducer.swift */; };
+		EAD0CC1F23B2D7910078028A /* usersRequest.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC1E23B2D7910078028A /* usersRequest.actions.swift */; };
+		EAD0CC2123B2D7A00078028A /* usersRequest.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC2023B2D7A00078028A /* usersRequest.reducer.swift */; };
+		EAD0CC2323B2D8610078028A /* usersTeam.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC2223B2D8610078028A /* usersTeam.actions.swift */; };
+		EAD0CC2523B2D87D0078028A /* usersTeam.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CC2423B2D87D0078028A /* usersTeam.reducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +76,42 @@
 		E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCollectionViewCell.swift; sourceTree = "<group>"; tabWidth = 4; };
 		E5C5AB5D23B0C1AB00A64161 /* UserLikePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLikePopup.swift; sourceTree = "<group>"; };
 		E678D7B03556851580CEFAB5 /* Pods-RTF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTF/Pods-RTF.debug.xcconfig"; sourceTree = "<group>"; };
+		EAD0CBDE23B2A7CF0078028A /* store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = store.swift; sourceTree = "<group>"; };
+		EAD0CBE023B2A9860078028A /* devToolsMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devToolsMiddleware.swift; sourceTree = "<group>"; };
+		EAD0CBE223B2ABB20078028A /* users.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = users.actions.swift; sourceTree = "<group>"; };
+		EAD0CBE423B2AD110078028A /* users.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = users.reducer.swift; sourceTree = "<group>"; };
+		EAD0CBE623B2B3A70078028A /* boss.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boss.actions.swift; sourceTree = "<group>"; };
+		EAD0CBE823B2B4150078028A /* boss.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boss.reducer.swift; sourceTree = "<group>"; };
+		EAD0CBEA23B2BC930078028A /* comparison.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comparison.actions.swift; sourceTree = "<group>"; };
+		EAD0CBEC23B2BCA10078028A /* comparison.reducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comparison.reducers.swift; sourceTree = "<group>"; };
+		EAD0CBEE23B2C2E70078028A /* feedbackProps.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbackProps.actions.swift; sourceTree = "<group>"; };
+		EAD0CBF023B2C3E90078028A /* feedbackProps.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbackProps.reducer.swift; sourceTree = "<group>"; };
+		EAD0CBF223B2C6B30078028A /* message.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = message.actions.swift; sourceTree = "<group>"; };
+		EAD0CBF423B2C6ED0078028A /* message.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = message.reducer.swift; sourceTree = "<group>"; };
+		EAD0CBF623B2C7F20078028A /* requestRating.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requestRating.actions.swift; sourceTree = "<group>"; };
+		EAD0CBF823B2C8270078028A /* requestRating.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requestRating.reducer.swift; sourceTree = "<group>"; };
+		EAD0CBFA23B2CA470078028A /* statistics.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statistics.actions.swift; sourceTree = "<group>"; };
+		EAD0CBFC23B2CA560078028A /* statistics.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statistics.reducer.swift; sourceTree = "<group>"; };
+		EAD0CBFE23B2CC2F0078028A /* subordinates.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subordinates.actions.swift; sourceTree = "<group>"; };
+		EAD0CC0023B2CC390078028A /* subordinates.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subordinates.reducer.swift; sourceTree = "<group>"; };
+		EAD0CC0223B2CD400078028A /* teamInfo.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamInfo.actions.swift; sourceTree = "<group>"; };
+		EAD0CC0423B2CD4F0078028A /* teamInfo.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamInfo.reducer.swift; sourceTree = "<group>"; };
+		EAD0CC0623B2CE670078028A /* thanks.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thanks.actions.swift; sourceTree = "<group>"; };
+		EAD0CC0823B2CE790078028A /* thanks.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thanks.reducer.swift; sourceTree = "<group>"; };
+		EAD0CC0A23B2CFB60078028A /* usersAll.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersAll.actions.swift; sourceTree = "<group>"; };
+		EAD0CC0C23B2CFC50078028A /* usersAll.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersAll.reducer.swift; sourceTree = "<group>"; };
+		EAD0CC0E23B2D1780078028A /* usersFavourite.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersFavourite.actions.swift; sourceTree = "<group>"; };
+		EAD0CC1023B2D1890078028A /* usersFavourite.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersFavourite.reducer.swift; sourceTree = "<group>"; };
+		EAD0CC1223B2D2FE0078028A /* usersHistory.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersHistory.actions.swift; sourceTree = "<group>"; };
+		EAD0CC1423B2D30E0078028A /* usersHistory.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersHistory.reducer.swift; sourceTree = "<group>"; };
+		EAD0CC1623B2D48C0078028A /* usersInbox.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersInbox.reducer.swift; sourceTree = "<group>"; };
+		EAD0CC1823B2D4960078028A /* usersInbox.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersInbox.actions.swift; sourceTree = "<group>"; };
+		EAD0CC1A23B2D6460078028A /* usersRecent.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersRecent.actions.swift; sourceTree = "<group>"; };
+		EAD0CC1C23B2D6530078028A /* usersRecent.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersRecent.reducer.swift; sourceTree = "<group>"; };
+		EAD0CC1E23B2D7910078028A /* usersRequest.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersRequest.actions.swift; sourceTree = "<group>"; };
+		EAD0CC2023B2D7A00078028A /* usersRequest.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersRequest.reducer.swift; sourceTree = "<group>"; };
+		EAD0CC2223B2D8610078028A /* usersTeam.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersTeam.actions.swift; sourceTree = "<group>"; };
+		EAD0CC2423B2D87D0078028A /* usersTeam.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersTeam.reducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +181,7 @@
 		E5B3C12C239AB11600C7E00F /* RTF */ = {
 			isa = PBXGroup;
 			children = (
+				EAD0CBD923B2A7740078028A /* _store */,
 				E5A2338A23AF72E500D889EC /* Main.storyboard */,
 				E5B3C12D239AB11600C7E00F /* AppDelegate.swift */,
 				E5B3C12F239AB11600C7E00F /* SceneDelegate.swift */,
@@ -123,6 +196,81 @@
 				58AAA76161BE2F5D1476F3F0 /* _api */,
 			);
 			path = RTF;
+			sourceTree = "<group>";
+		};
+		EAD0CBD923B2A7740078028A /* _store */ = {
+			isa = PBXGroup;
+			children = (
+				EAD0CBDD23B2A7AE0078028A /* services */,
+				EAD0CBDC23B2A7A80078028A /* effects */,
+				EAD0CBDB23B2A7A20078028A /* reducers */,
+				EAD0CBDA23B2A79B0078028A /* actions */,
+				EAD0CBDE23B2A7CF0078028A /* store.swift */,
+				EAD0CBE023B2A9860078028A /* devToolsMiddleware.swift */,
+			);
+			path = _store;
+			sourceTree = "<group>";
+		};
+		EAD0CBDA23B2A79B0078028A /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				EAD0CBEE23B2C2E70078028A /* feedbackProps.actions.swift */,
+				EAD0CBE623B2B3A70078028A /* boss.actions.swift */,
+				EAD0CBEA23B2BC930078028A /* comparison.actions.swift */,
+				EAD0CBF223B2C6B30078028A /* message.actions.swift */,
+				EAD0CBF623B2C7F20078028A /* requestRating.actions.swift */,
+				EAD0CBFA23B2CA470078028A /* statistics.actions.swift */,
+				EAD0CBFE23B2CC2F0078028A /* subordinates.actions.swift */,
+				EAD0CC0223B2CD400078028A /* teamInfo.actions.swift */,
+				EAD0CC0623B2CE670078028A /* thanks.actions.swift */,
+				EAD0CBE223B2ABB20078028A /* users.actions.swift */,
+				EAD0CC0A23B2CFB60078028A /* usersAll.actions.swift */,
+				EAD0CC0E23B2D1780078028A /* usersFavourite.actions.swift */,
+				EAD0CC1223B2D2FE0078028A /* usersHistory.actions.swift */,
+				EAD0CC1823B2D4960078028A /* usersInbox.actions.swift */,
+				EAD0CC1A23B2D6460078028A /* usersRecent.actions.swift */,
+				EAD0CC1E23B2D7910078028A /* usersRequest.actions.swift */,
+				EAD0CC2223B2D8610078028A /* usersTeam.actions.swift */,
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		EAD0CBDB23B2A7A20078028A /* reducers */ = {
+			isa = PBXGroup;
+			children = (
+				EAD0CBE823B2B4150078028A /* boss.reducer.swift */,
+				EAD0CBEC23B2BCA10078028A /* comparison.reducers.swift */,
+				EAD0CBF023B2C3E90078028A /* feedbackProps.reducer.swift */,
+				EAD0CBF423B2C6ED0078028A /* message.reducer.swift */,
+				EAD0CBF823B2C8270078028A /* requestRating.reducer.swift */,
+				EAD0CBFC23B2CA560078028A /* statistics.reducer.swift */,
+				EAD0CC0023B2CC390078028A /* subordinates.reducer.swift */,
+				EAD0CC0423B2CD4F0078028A /* teamInfo.reducer.swift */,
+				EAD0CC0823B2CE790078028A /* thanks.reducer.swift */,
+				EAD0CBE423B2AD110078028A /* users.reducer.swift */,
+				EAD0CC0C23B2CFC50078028A /* usersAll.reducer.swift */,
+				EAD0CC1023B2D1890078028A /* usersFavourite.reducer.swift */,
+				EAD0CC1423B2D30E0078028A /* usersHistory.reducer.swift */,
+				EAD0CC1623B2D48C0078028A /* usersInbox.reducer.swift */,
+				EAD0CC1C23B2D6530078028A /* usersRecent.reducer.swift */,
+				EAD0CC2023B2D7A00078028A /* usersRequest.reducer.swift */,
+				EAD0CC2423B2D87D0078028A /* usersTeam.reducer.swift */,
+			);
+			path = reducers;
+			sourceTree = "<group>";
+		};
+		EAD0CBDC23B2A7A80078028A /* effects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = effects;
+			sourceTree = "<group>";
+		};
+		EAD0CBDD23B2A7AE0078028A /* services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,12 +369,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RTF/Pods-RTF-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwiftMonitor/ReSwiftMonitor.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwiftMonitor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -240,14 +396,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD0CC1923B2D4960078028A /* usersInbox.actions.swift in Sources */,
 				E5B3C144239D093300C7E00F /* UserListCollectionViewCell.swift in Sources */,
+				EAD0CBF523B2C6ED0078028A /* message.reducer.swift in Sources */,
+				EAD0CC0923B2CE790078028A /* thanks.reducer.swift in Sources */,
+				EAD0CBF723B2C7F20078028A /* requestRating.actions.swift in Sources */,
+				EAD0CC2323B2D8610078028A /* usersTeam.actions.swift in Sources */,
+				EAD0CBE123B2A9860078028A /* devToolsMiddleware.swift in Sources */,
+				EAD0CC0123B2CC390078028A /* subordinates.reducer.swift in Sources */,
+				EAD0CBE923B2B4150078028A /* boss.reducer.swift in Sources */,
+				EAD0CBEF23B2C2E70078028A /* feedbackProps.actions.swift in Sources */,
+				EAD0CBFD23B2CA560078028A /* statistics.reducer.swift in Sources */,
 				E5B3C132239AB11600C7E00F /* MainScreenViewController.swift in Sources */,
+				EAD0CC1B23B2D6460078028A /* usersRecent.actions.swift in Sources */,
+				EAD0CBF123B2C3E90078028A /* feedbackProps.reducer.swift in Sources */,
+				EAD0CBFF23B2CC2F0078028A /* subordinates.actions.swift in Sources */,
 				E5C5AB5E23B0C1AB00A64161 /* UserLikePopup.swift in Sources */,
+				EAD0CC0523B2CD4F0078028A /* teamInfo.reducer.swift in Sources */,
+				EAD0CBE523B2AD110078028A /* users.reducer.swift in Sources */,
+				EAD0CC0F23B2D1780078028A /* usersFavourite.actions.swift in Sources */,
+				EAD0CC2523B2D87D0078028A /* usersTeam.reducer.swift in Sources */,
+				EAD0CC0323B2CD400078028A /* teamInfo.actions.swift in Sources */,
+				EAD0CBDF23B2A7CF0078028A /* store.swift in Sources */,
+				EAD0CC0B23B2CFB60078028A /* usersAll.actions.swift in Sources */,
 				E5B3C12E239AB11600C7E00F /* AppDelegate.swift in Sources */,
+				EAD0CC2123B2D7A00078028A /* usersRequest.reducer.swift in Sources */,
+				EAD0CC1323B2D2FE0078028A /* usersHistory.actions.swift in Sources */,
+				EAD0CC0723B2CE670078028A /* thanks.actions.swift in Sources */,
+				EAD0CC0D23B2CFC50078028A /* usersAll.reducer.swift in Sources */,
+				EAD0CC1F23B2D7910078028A /* usersRequest.actions.swift in Sources */,
 				E5B3C130239AB11600C7E00F /* SceneDelegate.swift in Sources */,
 				E5246A2023AFCF6200EC71A1 /* UserProfilePopup.swift in Sources */,
+				EAD0CBED23B2BCA10078028A /* comparison.reducers.swift in Sources */,
+				EAD0CC1723B2D48C0078028A /* usersInbox.reducer.swift in Sources */,
+				EAD0CBE723B2B3A70078028A /* boss.actions.swift in Sources */,
 				58AAA3AF6E25493E515EA489 /* Environment.swift in Sources */,
 				58AAAF5FFFF482EB327BD497 /* interceptor.swift in Sources */,
+				EAD0CC1523B2D30E0078028A /* usersHistory.reducer.swift in Sources */,
+				EAD0CC1123B2D1890078028A /* usersFavourite.reducer.swift in Sources */,
+				EAD0CBE323B2ABB30078028A /* users.actions.swift in Sources */,
+				EAD0CBF323B2C6B30078028A /* message.actions.swift in Sources */,
+				EAD0CBF923B2C8270078028A /* requestRating.reducer.swift in Sources */,
+				EAD0CBEB23B2BC930078028A /* comparison.actions.swift in Sources */,
+				EAD0CBFB23B2CA470078028A /* statistics.actions.swift in Sources */,
+				EAD0CC1D23B2D6530078028A /* usersRecent.reducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

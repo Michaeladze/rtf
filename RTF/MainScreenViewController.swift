@@ -8,6 +8,8 @@
 
 import UIKit
 import Alamofire
+import ReSwift
+import SwiftyJSON
 
 var navButton: String = "Default"
 
@@ -35,10 +37,7 @@ class mainScreenViewVontroller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-
-
+        
         /* test funcion */
         getRequest()
     }
@@ -47,12 +46,19 @@ class mainScreenViewVontroller: UIViewController {
 
 func getRequest (){
 
-    print(Environment.appAuth);
-
+    //print(Environment.appAuth);
     
-    let sessionManager = SessionManager()
-    sessionManager.adapter = interceptor(customParams: "1234")
-    sessionManager.request("https://jsonplaceholder.typicode.com/posts")
+    let sessionManager = Alamofire.SessionManager.default
+    sessionManager.adapter = interceptor(project: "RTF")
+    sessionManager.request("https://p2passesmentj2dacd8d8.ru1.hana.ondemand.com/p2p-assessment/relation/recent", method: .post).responseJSON { response in
+        switch response.result {
+        case .success(let value):
+            let json = JSON(value)
+            print("JSON: \(json)")
+        case .failure(let error):
+            print(error)
+        }
+    }
 }
 
 //Расширение основого контролллера - Обработчик списка пользователей

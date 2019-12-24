@@ -9,10 +9,16 @@ target 'RTF' do
 use_frameworks!
 
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '13.0'
 
+# имплементация redux
 pod 'ReSwift'
+# redux devtools для ReSwift
+pod 'ReSwiftMonitor', :configurations => ['Debug']
+# networking, аналог axios
 pod 'Alamofire'
+# работа с JSON
+pod 'SwiftyJSON'
 
 
 end
