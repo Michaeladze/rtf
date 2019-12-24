@@ -1,20 +1,59 @@
 PODS:
   - Alamofire (4.9.1)
-  - ReSwift (5.0.0)
+  - DifferenceKit/Core (1.1.4)
+  - DifferenceKit/UIKitExtension (1.1.4):
+    - DifferenceKit/Core
+  - Nuke (7.6.3)
+  - ReactiveReSwift (4.0.0)
+  - ReSwift (4.1.1)
+  - ReSwiftThunk (1.1.0):
+    - ReSwift (~> 4.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxKeyboard (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
-  - ReSwift
+  - DifferenceKit/UIKitExtension
+  - Nuke (~> 7.4)
+  - ReactiveReSwift
+  - ReSwift (~> 4.0)
+  - ReSwiftThunk
+  - RxCocoa (~> 5)
+  - RxKeyboard
+  - RxSwift (~> 5)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - DifferenceKit
+    - Nuke
+    - ReactiveReSwift
     - ReSwift
+    - ReSwiftThunk
+    - RxCocoa
+    - RxKeyboard
+    - RxRelay
+    - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
+  DifferenceKit: d7e8a7edd2ae706f1e1f05c8103d4cf858e04b78
+  Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
+  ReactiveReSwift: b6187229efcc5ec819fb1d3d19716c231bcc0456
+  ReSwift: d925be0033558f55bd73d92869961230dfe19d52
+  ReSwiftThunk: 727c1549dbd2949472e1c72bec44b1008d7c4f92
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxKeyboard: 6683c4344304a00f943c158bd8a43ce5469c82a7
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: 39d6bfbe750f1ca699eb0dad3319805a792ebf86
+PODFILE CHECKSUM: 760dc81a5f3e0024c7e4c392fd264db536678c8e
 
 COCOAPODS: 1.5.2

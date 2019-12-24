@@ -8,6 +8,8 @@
 
 import UIKit
 import Alamofire
+import ReactiveReSwift
+import RxSwift
 
 var navButton: String = "Default"
 
@@ -36,7 +38,8 @@ class mainScreenViewVontroller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        mainStore.dispatch(AllActions.GetUsersPending)
+        mainStore.dispatch(GetUsersPendingThunk)
 
 
         /* test funcion */

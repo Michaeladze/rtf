@@ -1,18 +1,28 @@
-project 'RTF.xcodeproj'
 
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
 
 target 'RTF' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+platform :ios, '10.0'
+  use_frameworks!
+  inhibit_all_warnings!
 
-use_frameworks!
+  # Redux pods
+  pod 'ReSwift', '~> 4.0'
+  pod 'ReSwiftThunk'
+  pod 'ReactiveReSwift'
 
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+  # Reactive pods
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  pod 'RxKeyboard'
 
-pod 'ReSwift'
-pod 'Alamofire'
+  # Networking pods
+  pod 'Nuke', '~> 7.4'
+
+  # Diffing pods
+  pod 'DifferenceKit/UIKitExtension'
+
+  pod 'Alamofire'
+
 
 
 end

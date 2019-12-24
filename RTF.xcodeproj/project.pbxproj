@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58AAA0A7CA1F9B69791FBB92 /* user.service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA1120663174F293A958B /* user.service.swift */; };
+		58AAA24EAEB0F1A9F6EA9B47 /* _main.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA2541D7C0D322453238D /* _main.reducer.swift */; };
+		58AAA32BDD8E9E5FAD6CC819 /* redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAAF51F2131899EAE18792 /* redux.swift */; };
 		58AAA3AF6E25493E515EA489 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA706FEB37C46C647F413 /* Environment.swift */; };
+		58AAA5F7EB30EAF3A4710537 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA3E60761FB678C269341 /* userModel.swift */; };
+		58AAA8EC1A828BEC63ED8E13 /* users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA87F9BE26ADBA4AE358F /* users.swift */; };
+		58AAAAA163199AA9B896E8FD /* user.effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAABF0DE0CE436D30451F4 /* user.effect.swift */; };
+		58AAAB2C68231C5994D06756 /* ReactiveReSwiftBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA42024A6E16EFFB0A2A6 /* ReactiveReSwiftBridge.swift */; };
+		58AAAC7D18655CA9E88A9932 /* allAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAADB270D5C2EB03BD63FA /* allAction.swift */; };
+		58AAADDBB4AA1C331A26DA66 /* index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA67F10238334EB6FD13C /* index.swift */; };
 		58AAAF5FFFF482EB327BD497 /* interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA7A653ABB071A8E36F12 /* interceptor.swift */; };
 		B5AC7A1128EF6709C652A730 /* Pods_RTF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AFC2C1F25D7BE25DF7EB7B /* Pods_RTF.framework */; };
 		E5246A1E23AF795400EC71A1 /* likeButton.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E5246A1D23AF795300EC71A1 /* likeButton.pdf */; };
@@ -24,8 +33,17 @@
 
 /* Begin PBXFileReference section */
 		11AFC2C1F25D7BE25DF7EB7B /* Pods_RTF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58AAA1120663174F293A958B /* user.service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.service.swift; sourceTree = "<group>"; };
+		58AAA2541D7C0D322453238D /* _main.reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _main.reducer.swift; sourceTree = "<group>"; };
+		58AAA3E60761FB678C269341 /* userModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
+		58AAA42024A6E16EFFB0A2A6 /* ReactiveReSwiftBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveReSwiftBridge.swift; sourceTree = "<group>"; };
+		58AAA67F10238334EB6FD13C /* index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = index.swift; sourceTree = "<group>"; };
 		58AAA706FEB37C46C647F413 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		58AAA7A653ABB071A8E36F12 /* interceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = interceptor.swift; sourceTree = "<group>"; };
+		58AAA87F9BE26ADBA4AE358F /* users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = users.swift; sourceTree = "<group>"; };
+		58AAABF0DE0CE436D30451F4 /* user.effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.effect.swift; sourceTree = "<group>"; };
+		58AAADB270D5C2EB03BD63FA /* allAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allAction.swift; sourceTree = "<group>"; };
+		58AAAF51F2131899EAE18792 /* redux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = redux.swift; sourceTree = "<group>"; };
 		892A1881A922B86E8624AAC4 /* Pods-RTF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTF.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTF/Pods-RTF.release.xcconfig"; sourceTree = "<group>"; };
 		E5246A1D23AF795300EC71A1 /* likeButton.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = likeButton.pdf; sourceTree = "<group>"; };
 		E5246A1F23AFCF6200EC71A1 /* userProfilePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfilePopup.swift; sourceTree = "<group>"; };
@@ -54,12 +72,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58AAA3AEE5BBC6C77C0DF24A /* effects */ = {
+			isa = PBXGroup;
+			children = (
+				58AAABF0DE0CE436D30451F4 /* user.effect.swift */,
+			);
+			path = effects;
+			sourceTree = "<group>";
+		};
+		58AAA3AEF88332F31596E0EC /* _model */ = {
+			isa = PBXGroup;
+			children = (
+				58AAA3E60761FB678C269341 /* userModel.swift */,
+			);
+			path = _model;
+			sourceTree = "<group>";
+		};
+		58AAA42962112055898C1013 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				58AAA1120663174F293A958B /* user.service.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
 		58AAA76161BE2F5D1476F3F0 /* _api */ = {
 			isa = PBXGroup;
 			children = (
 				58AAA7A653ABB071A8E36F12 /* interceptor.swift */,
+				58AAAF51F2131899EAE18792 /* redux.swift */,
+				58AAA42024A6E16EFFB0A2A6 /* ReactiveReSwiftBridge.swift */,
 			);
 			path = _api;
+			sourceTree = "<group>";
+		};
+		58AAAA085A4ADA3644CCBE0D /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				58AAADB270D5C2EB03BD63FA /* allAction.swift */,
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		58AAAAAADA776EA0E4C9A2A6 /* reducers */ = {
+			isa = PBXGroup;
+			children = (
+				58AAA2541D7C0D322453238D /* _main.reducer.swift */,
+				58AAA87F9BE26ADBA4AE358F /* users.swift */,
+			);
+			path = reducers;
+			sourceTree = "<group>";
+		};
+		58AAAAEEE5295F4D27AFEA8E /* _store */ = {
+			isa = PBXGroup;
+			children = (
+				58AAAA085A4ADA3644CCBE0D /* actions */,
+				58AAA3AEE5BBC6C77C0DF24A /* effects */,
+				58AAAAAADA776EA0E4C9A2A6 /* reducers */,
+				58AAA42962112055898C1013 /* services */,
+				58AAA67F10238334EB6FD13C /* index.swift */,
+			);
+			path = _store;
 			sourceTree = "<group>";
 		};
 		58AAACFC0539DFB8682909EE /* _env */ = {
@@ -121,6 +194,8 @@
 				E5B3C13B239AB11700C7E00F /* Info.plist */,
 				58AAACFC0539DFB8682909EE /* _env */,
 				58AAA76161BE2F5D1476F3F0 /* _api */,
+				58AAAAEEE5295F4D27AFEA8E /* _store */,
+				58AAA3AEF88332F31596E0EC /* _model */,
 			);
 			path = RTF;
 			sourceTree = "<group>";
@@ -221,12 +296,28 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RTF/Pods-RTF-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwiftThunk/ReSwiftThunk.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveReSwift/ReactiveReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwiftThunk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -248,6 +339,15 @@
 				E5246A2023AFCF6200EC71A1 /* userProfilePopup.swift in Sources */,
 				58AAA3AF6E25493E515EA489 /* Environment.swift in Sources */,
 				58AAAF5FFFF482EB327BD497 /* interceptor.swift in Sources */,
+				58AAADDBB4AA1C331A26DA66 /* index.swift in Sources */,
+				58AAA24EAEB0F1A9F6EA9B47 /* _main.reducer.swift in Sources */,
+				58AAAAA163199AA9B896E8FD /* user.effect.swift in Sources */,
+				58AAA32BDD8E9E5FAD6CC819 /* redux.swift in Sources */,
+				58AAA5F7EB30EAF3A4710537 /* userModel.swift in Sources */,
+				58AAAB2C68231C5994D06756 /* ReactiveReSwiftBridge.swift in Sources */,
+				58AAAC7D18655CA9E88A9932 /* allAction.swift in Sources */,
+				58AAA8EC1A828BEC63ED8E13 /* users.swift in Sources */,
+				58AAA0A7CA1F9B69791FBB92 /* user.service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
