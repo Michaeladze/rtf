@@ -11,15 +11,15 @@
 		58AAAF5FFFF482EB327BD497 /* interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA7A653ABB071A8E36F12 /* interceptor.swift */; };
 		B5AC7A1128EF6709C652A730 /* Pods_RTF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AFC2C1F25D7BE25DF7EB7B /* Pods_RTF.framework */; };
 		E5246A1E23AF795400EC71A1 /* likeButton.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E5246A1D23AF795300EC71A1 /* likeButton.pdf */; };
-		E5246A2023AFCF6200EC71A1 /* userProfilePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5246A1F23AFCF6200EC71A1 /* userProfilePopup.swift */; };
+		E5246A2023AFCF6200EC71A1 /* UserProfilePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5246A1F23AFCF6200EC71A1 /* UserProfilePopup.swift */; };
 		E5A2338C23AF72E500D889EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A2338A23AF72E500D889EC /* Main.storyboard */; };
 		E5B3C12E239AB11600C7E00F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C12D239AB11600C7E00F /* AppDelegate.swift */; };
 		E5B3C130239AB11600C7E00F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C12F239AB11600C7E00F /* SceneDelegate.swift */; };
-		E5B3C132239AB11600C7E00F /* mainScreenViewVontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C131239AB11600C7E00F /* mainScreenViewVontroller.swift */; };
+		E5B3C132239AB11600C7E00F /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C131239AB11600C7E00F /* MainScreenViewController.swift */; };
 		E5B3C137239AB11700C7E00F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B3C136239AB11700C7E00F /* Assets.xcassets */; };
 		E5B3C13A239AB11700C7E00F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B3C138239AB11700C7E00F /* LaunchScreen.storyboard */; };
-		E5B3C144239D093300C7E00F /* userListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C143239D093300C7E00F /* userListCollectionViewCell.swift */; };
-		E5C5AB5E23B0C1AB00A64161 /* userLikePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */; };
+		E5B3C144239D093300C7E00F /* UserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */; };
+		E5C5AB5E23B0C1AB00A64161 /* UserLikePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C5AB5D23B0C1AB00A64161 /* UserLikePopup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,17 +28,17 @@
 		58AAA7A653ABB071A8E36F12 /* interceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = interceptor.swift; sourceTree = "<group>"; };
 		892A1881A922B86E8624AAC4 /* Pods-RTF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTF.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTF/Pods-RTF.release.xcconfig"; sourceTree = "<group>"; };
 		E5246A1D23AF795300EC71A1 /* likeButton.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = likeButton.pdf; sourceTree = "<group>"; };
-		E5246A1F23AFCF6200EC71A1 /* userProfilePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfilePopup.swift; sourceTree = "<group>"; };
+		E5246A1F23AFCF6200EC71A1 /* UserProfilePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePopup.swift; sourceTree = "<group>"; };
 		E5A2338B23AF72E500D889EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5B3C12A239AB11600C7E00F /* RTF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B3C12D239AB11600C7E00F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5B3C12F239AB11600C7E00F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E5B3C131239AB11600C7E00F /* mainScreenViewVontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreenViewVontroller.swift; sourceTree = "<group>"; };
+		E5B3C131239AB11600C7E00F /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		E5B3C136239AB11700C7E00F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5B3C139239AB11700C7E00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5B3C13B239AB11700C7E00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5B3C143239D093300C7E00F /* userListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userListCollectionViewCell.swift; sourceTree = "<group>"; tabWidth = 4; };
-		E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLikePopup.swift; sourceTree = "<group>"; };
+		E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCollectionViewCell.swift; sourceTree = "<group>"; tabWidth = 4; };
+		E5C5AB5D23B0C1AB00A64161 /* UserLikePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLikePopup.swift; sourceTree = "<group>"; };
 		E678D7B03556851580CEFAB5 /* Pods-RTF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTF/Pods-RTF.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,10 +112,10 @@
 				E5A2338A23AF72E500D889EC /* Main.storyboard */,
 				E5B3C12D239AB11600C7E00F /* AppDelegate.swift */,
 				E5B3C12F239AB11600C7E00F /* SceneDelegate.swift */,
-				E5B3C131239AB11600C7E00F /* mainScreenViewVontroller.swift */,
-				E5B3C143239D093300C7E00F /* userListCollectionViewCell.swift */,
-				E5246A1F23AFCF6200EC71A1 /* userProfilePopup.swift */,
-				E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */,
+				E5B3C131239AB11600C7E00F /* MainScreenViewController.swift */,
+				E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */,
+				E5246A1F23AFCF6200EC71A1 /* UserProfilePopup.swift */,
+				E5C5AB5D23B0C1AB00A64161 /* UserLikePopup.swift */,
 				E5B3C136239AB11700C7E00F /* Assets.xcassets */,
 				E5B3C138239AB11700C7E00F /* LaunchScreen.storyboard */,
 				E5B3C13B239AB11700C7E00F /* Info.plist */,
@@ -240,12 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5B3C144239D093300C7E00F /* userListCollectionViewCell.swift in Sources */,
-				E5B3C132239AB11600C7E00F /* mainScreenViewVontroller.swift in Sources */,
-				E5C5AB5E23B0C1AB00A64161 /* userLikePopup.swift in Sources */,
+				E5B3C144239D093300C7E00F /* UserListCollectionViewCell.swift in Sources */,
+				E5B3C132239AB11600C7E00F /* MainScreenViewController.swift in Sources */,
+				E5C5AB5E23B0C1AB00A64161 /* UserLikePopup.swift in Sources */,
 				E5B3C12E239AB11600C7E00F /* AppDelegate.swift in Sources */,
 				E5B3C130239AB11600C7E00F /* SceneDelegate.swift in Sources */,
-				E5246A2023AFCF6200EC71A1 /* userProfilePopup.swift in Sources */,
+				E5246A2023AFCF6200EC71A1 /* UserProfilePopup.swift in Sources */,
 				58AAA3AF6E25493E515EA489 /* Environment.swift in Sources */,
 				58AAAF5FFFF482EB327BD497 /* interceptor.swift in Sources */,
 			);
