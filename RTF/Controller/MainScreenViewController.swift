@@ -62,11 +62,11 @@ func getRequest (){
 }
 
 //Расширение основого контролллера - Обработчик списка пользователей
-extension mainScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+extension MainScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 15;
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = myViewCollection.dequeueReusableCell(withReuseIdentifier: "userList", for: indexPath)
             as! UserListCollectionViewCell
