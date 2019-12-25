@@ -69,7 +69,7 @@ extension mainScreenViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = myViewCollection.dequeueReusableCell(withReuseIdentifier: "userList", for: indexPath)
-            as! userListCollectionViewCell
+            as! UserListCollectionViewCell
         cell.firstName.text = navButton + String(indexPath.row)
         cell.lastName.text = "Первый " + String(indexPath.row)
 

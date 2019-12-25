@@ -204,10 +204,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
         </scene>
-        <!--userProfileMenu-->
+        <!--UserProfileMenu-->
         <scene sceneID="G11-ZX-DWC">
             <objects>
-                <viewController title="userProfileMenu" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="hK5-gI-73T" customClass="userProfilePopup" customModule="RTF" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="userProfileMenu" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="hK5-gI-73T" userLabel="UserProfileMenu" customClass="UserProfilePopup" customModule="RTF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b3t-cV-W8I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -251,10 +251,10 @@
             </objects>
             <point key="canvasLocation" x="138" y="875"/>
         </scene>
-        <!--userLikeMenu-->
+        <!--UserLikeMenu-->
         <scene sceneID="dEF-Xh-6ki">
             <objects>
-                <viewController title="userLikeMenu" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="ZC4-zF-VOQ" userLabel="userLikeMenu" customClass="userLikePopup" customModule="RTF" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="userLikeMenu" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="ZC4-zF-VOQ" userLabel="UserLikeMenu" customClass="UserLikePopup" customModule="RTF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xq3-kg-5rz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
