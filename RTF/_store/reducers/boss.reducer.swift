@@ -20,7 +20,8 @@ func bossReducer(action: Action, state: bossState?) -> bossState {
     guard let action = action as? bossActions else {
         return state
     }
-    
+
+
     switch action {
     case .pendingGetBoss:
         state.status = "[Pending] pendingGetBoss"
