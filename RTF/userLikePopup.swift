@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserLikePopup: UIViewController {
+class userLikePopup: UIViewController {
     @IBAction func closePopup(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
