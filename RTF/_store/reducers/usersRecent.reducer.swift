@@ -9,24 +9,24 @@
 import ReSwift
 
 
-struct usersRecentState: StateType {
-    var collection = ""
+struct UsersRecentState: StateType {
+    var collection: [IUser] = []
     var status = ""
 }
 
-func usersRecentReducer(action: Action, state: usersRecentState?) -> usersRecentState {
-    var state = state ?? usersRecentState()
-    
+func usersRecentReducer(action: Action, state: UsersRecentState?) -> UsersRecentState {
+    var state = state ?? UsersRecentState()
+
     guard let action = action as? usersRecentActions else {
         return state
     }
-    print("red" ,action)
+    print("red", action)
     switch action {
     case .pendingGetRecentUsers:
         state.status = "[Pending] pendingGetRecentUsers"
         break;
-    case .successGetRecentUsers:
-        state.collection = "data blob, state change"
+    case .successGetRecentUsers(let users):
+        state.collection = users;
         state.status = "[Success] successGetRecentUsers"
         break;
     case .pendingPinForRecent:

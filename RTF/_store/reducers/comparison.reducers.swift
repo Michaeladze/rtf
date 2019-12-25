@@ -9,18 +9,18 @@
 import ReSwift
 
 
-struct comparisonState: StateType {
+struct ComparisonState: StateType {
     var collection = ""
     var status = ""
 }
 
-func comparisonReducer(action: Action, state: comparisonState?) -> comparisonState {
-    var state = state ?? comparisonState()
-    
+func comparisonReducer(action: Action, state: ComparisonState?) -> ComparisonState {
+    var state = state ?? ComparisonState()
+
     guard let action = action as? comparisonActions else {
         return state
     }
-    
+
     switch action {
     case .pendingUserForComparison:
         state.status = "[Pending] pendingUserForComparison"

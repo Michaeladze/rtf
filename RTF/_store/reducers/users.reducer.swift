@@ -64,18 +64,18 @@ struct IUser: Codable, Equatable {
 
 
 
-struct usersState: StateType {
+struct UsersState: StateType {
     var collection = ""
     var status = ""
 }
 
-func usersReducer(action: Action, state: usersState?) -> usersState {
-    var state = state ?? usersState()
-    
+func usersReducer(action: Action, state: UsersState?) -> UsersState {
+    var state = state ?? UsersState()
+
     guard let action = action as? usersActions else {
         return state
     }
-    
+
     switch action {
     case .pendingGetMe:
         state.status = "[Pending] pendingGetMe"

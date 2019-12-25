@@ -13,7 +13,10 @@ import SwiftyJSON
 
 var navButton: String = "Default"
 
-class MainScreenViewController: UIViewController {
+class MainScreenViewController: UIViewController, StoreSubscriber {
+
+
+    typealias StoreSubscriberStateType = UsersRecentState
     @IBOutlet weak var myViewCollection: UICollectionView!
     @IBOutlet weak var userProfileButton: UIButton!
     @IBOutlet weak var assessmentListButton: UIButton!
@@ -33,43 +36,48 @@ class MainScreenViewController: UIViewController {
         //print(navButton)
     }
 
-    
-    
+    func newState(state: UsersRecentState) {
+        print(state)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        store.subscribe(self) {
+            $0.select {
+                $0.usersRecentSubState
+            }
+        }
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        store.unsubscribe(self)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         store.dispatch(usersRecentActions.pendingGetRecentUsers)
-        /* test funcion */
-        getRequest()
-    }
-    
-}
 
-func getRequest (){
-
-    //print(Environment.appAuth);
-    
-    let sessionManager = Alamofire.SessionManager.default
-    sessionManager.adapter = interceptor(project: "RTF")
-    sessionManager.request("https://p2passesmentj2dacd8d8.ru1.hana.ondemand.com/p2p-assessment/relation/recent", method: .post).responseJSON { response in
-        switch response.result {
-        case .success(let value):
-            let json = JSON(value)
-            //print("JSON: \(json)")
-        case .failure(let error):
-            print(error)
+        store.subscribe(self) { sub in
+            sub.select { state in
+                state.usersRecentSubState
+            }
         }
+
     }
+
 }
+
 
 //Расширение основого контролллера - Обработчик списка пользователей
-extension MainScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+extension MainScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 15;
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = myViewCollection.dequeueReusableCell(withReuseIdentifier: "userList", for: indexPath)
-            as! UserListCollectionViewCell
+                as! UserListCollectionViewCell
         cell.firstName.text = navButton + String(indexPath.row)
         cell.lastName.text = "Первый " + String(indexPath.row)
 

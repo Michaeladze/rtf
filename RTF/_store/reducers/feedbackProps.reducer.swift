@@ -9,18 +9,18 @@
 import ReSwift
 
 
-struct feedbackPropsState: StateType {
+struct FeedbackPropsState: StateType {
     var collection = ""
     var status = ""
 }
 
-func feedbackPropsReducer(action: Action, state: feedbackPropsState?) -> feedbackPropsState {
-    var state = state ?? feedbackPropsState()
-    
+func feedbackPropsReducer(action: Action, state: FeedbackPropsState?) -> FeedbackPropsState {
+    var state = state ?? FeedbackPropsState()
+
     guard let action = action as? feedbackPropsActions else {
         return state
     }
-    
+
     switch action {
     case .pendingGetAllCompetences:
         state.status = "[Pending] pendingGetAllCompetences"

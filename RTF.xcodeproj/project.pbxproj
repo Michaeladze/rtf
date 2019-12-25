@@ -23,7 +23,6 @@
 		E5B3C137239AB11700C7E00F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B3C136239AB11700C7E00F /* Assets.xcassets */; };
 		E5B3C144239D093300C7E00F /* UserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */; };
 		EAD0CBDF23B2A7CF0078028A /* store.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBDE23B2A7CF0078028A /* store.swift */; };
-		EAD0CBE123B2A9860078028A /* devToolsMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE023B2A9860078028A /* devToolsMiddleware.swift */; };
 		EAD0CBE323B2ABB30078028A /* users.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE223B2ABB20078028A /* users.actions.swift */; };
 		EAD0CBE523B2AD110078028A /* users.reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE423B2AD110078028A /* users.reducer.swift */; };
 		EAD0CBE723B2B3A70078028A /* boss.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE623B2B3A70078028A /* boss.actions.swift */; };
@@ -80,7 +79,6 @@
 		E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCollectionViewCell.swift; sourceTree = "<group>"; tabWidth = 4; };
 		E678D7B03556851580CEFAB5 /* Pods-RTF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTF/Pods-RTF.debug.xcconfig"; sourceTree = "<group>"; };
 		EAD0CBDE23B2A7CF0078028A /* store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = store.swift; sourceTree = "<group>"; };
-		EAD0CBE023B2A9860078028A /* devToolsMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devToolsMiddleware.swift; sourceTree = "<group>"; };
 		EAD0CBE223B2ABB20078028A /* users.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = users.actions.swift; sourceTree = "<group>"; };
 		EAD0CBE423B2AD110078028A /* users.reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = users.reducer.swift; sourceTree = "<group>"; };
 		EAD0CBE623B2B3A70078028A /* boss.actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boss.actions.swift; sourceTree = "<group>"; };
@@ -230,7 +228,6 @@
 				EAD0CBDB23B2A7A20078028A /* reducers */,
 				EAD0CBDA23B2A79B0078028A /* actions */,
 				EAD0CBDE23B2A7CF0078028A /* store.swift */,
-				EAD0CBE023B2A9860078028A /* devToolsMiddleware.swift */,
 				58AAA0976C6E9CC57DDDD011 /* effects */,
 			);
 			path = _store;
@@ -414,7 +411,6 @@
 				E5A2C38C23B38DA1001E15AA /* UserLikePopupController.swift in Sources */,
 				EAD0CBF723B2C7F20078028A /* requestRating.actions.swift in Sources */,
 				EAD0CC2323B2D8610078028A /* usersTeam.actions.swift in Sources */,
-				EAD0CBE123B2A9860078028A /* devToolsMiddleware.swift in Sources */,
 				EAD0CC0123B2CC390078028A /* subordinates.reducer.swift in Sources */,
 				EAD0CBE923B2B4150078028A /* boss.reducer.swift in Sources */,
 				EAD0CBEF23B2C2E70078028A /* feedbackProps.actions.swift in Sources */,

@@ -9,18 +9,18 @@
 import ReSwift
 
 
-struct messageState: StateType {
+struct MessageState: StateType {
     var collection = ""
     var status = ""
 }
 
-func messageReducer(action: Action, state: messageState?) -> messageState {
-    var state = state ?? messageState()
-    
+func messageReducer(action: Action, state: MessageState?) -> MessageState {
+    var state = state ?? MessageState()
+
     guard let action = action as? messageActions else {
         return state
     }
-    
+
     switch action {
     case .successShowMessage:
         state.collection = "data blob, state change"

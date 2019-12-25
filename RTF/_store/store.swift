@@ -13,11 +13,11 @@ import ReSwift
  описывает типы переменных и инициализирует их
  */
 struct AppState: StateType {
-    var usersSubState = usersState()
-    var bossSubState = bossState()
-    var comparisonSubState = comparisonState()
-    var feedbackPropsSubState = feedbackPropsState()
-    var messageSubState = messageState()
+    var usersSubState: UsersState = UsersState()
+    var bossSubState: BossState = BossState()
+    var comparisonSubState: ComparisonState = ComparisonState()
+    var feedbackPropsSubState: FeedbackPropsState = FeedbackPropsState()
+    var messageSubState: MessageState = MessageState()
     var requestRatingSubState = requestRatingState()
     var statisticsSubState = statisticsState()
     var subordinatesSubState = subordinatesState()
@@ -27,7 +27,7 @@ struct AppState: StateType {
     var usersFavouriteSubState = usersFavouriteState()
     var userHistorySubState = usersHistoryState()
     var usersInboxSubState = usersInboxState()
-    var usersRecentSubState = usersRecentState()
+    var usersRecentSubState: UsersRecentState = UsersRecentState()
     var usersRequestSubState = usersRequestState()
     var usersTeamSubState = usersTeamState()
 }

@@ -9,14 +9,14 @@
 import ReSwift
 
 
-struct bossState: StateType {
+struct BossState: StateType {
     var collection = ""
     var status = ""
 }
 
-func bossReducer(action: Action, state: bossState?) -> bossState {
-    var state = state ?? bossState()
-    
+func bossReducer(action: Action, state: BossState?) -> BossState {
+    var state = state ?? BossState()
+
     guard let action = action as? bossActions else {
         return state
     }
