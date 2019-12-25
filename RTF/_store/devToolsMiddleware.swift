@@ -14,11 +14,12 @@ import ReSwiftMonitor
  https://cocoapods.org/pods/ReSwiftMonitor
  пока не работает :<
  */
-var middleware: [Middleware<AppState>] = {
-    var _middleware: [Middleware<AppState>] = []
-    #if DEBUG
-    let monitorMiddleware = MonitorMiddleware.make(configuration: Configuration())
-    _middleware.append(monitorMiddleware)
-    #endif
-    return _middleware
-}()
+//var middleware: [Middleware<AppState>] = {
+//    var _middleware: [Middleware<AppState>] = []
+//    #if DEBUG
+//    let monitorMiddleware = MonitorMiddleware.make(configuration: Configuration())
+//    _middleware.append(monitorMiddleware)
+//    #endif
+//    return _middleware
+//}()
+

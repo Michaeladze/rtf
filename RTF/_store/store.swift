@@ -65,5 +65,5 @@ func appReducer(action: Action, state: AppState?) -> AppState {
 let store = Store(
     reducer: appReducer,
     state: AppState(),
-    middleware: middleware
+    middleware: [userRecentEffect]
 )
