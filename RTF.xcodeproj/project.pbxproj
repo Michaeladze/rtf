@@ -209,9 +209,9 @@
 		E5B3C12C239AB11600C7E00F /* RTF */ = {
 			isa = PBXGroup;
 			children = (
+				EAD0CBD923B2A7740078028A /* _store */,
 				E539453523B38A4D00F73E8E /* View */,
 				E539453423B389C800F73E8E /* Controller */,
-				EAD0CBD923B2A7740078028A /* _store */,
 				E5A2338A23AF72E500D889EC /* Main.storyboard */,
 				E5B3C12D239AB11600C7E00F /* AppDelegate.swift */,
 				E5B3C12F239AB11600C7E00F /* SceneDelegate.swift */,
