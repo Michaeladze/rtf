@@ -13,7 +13,7 @@ import SwiftyJSON
 
 var navButton: String = "Default"
 
-class mainScreenViewController: UIViewController {
+class MainScreenViewController: UIViewController {
     @IBOutlet weak var myViewCollection: UICollectionView!
     @IBOutlet weak var userProfileButton: UIButton!
     @IBOutlet weak var assessmentListButton: UIButton!
