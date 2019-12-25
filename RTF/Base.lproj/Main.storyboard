@@ -30,7 +30,7 @@
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="userList" id="4dr-mi-hor" customClass="userListCollectionViewCell" customModule="RTF" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="userList" id="4dr-mi-hor" customClass="UserListCollectionViewCell" customModule="RTF" customModuleProvider="target">
                                         <rect key="frame" x="10" y="0.0" width="80" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="i5R-Fn-m5k">
@@ -207,7 +207,7 @@
         <!--UserProfileMenu-->
         <scene sceneID="G11-ZX-DWC">
             <objects>
-                <viewController title="userProfileMenu" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="hK5-gI-73T" userLabel="UserProfileMenu" customClass="UserProfilePopup" customModule="RTF" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="userProfileMenu" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="hK5-gI-73T" userLabel="UserProfileMenu" customClass="userProfilePopup" customModule="RTF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b3t-cV-W8I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,7 +225,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="closePopup:" destination="hK5-gI-73T" eventType="touchUpInside" id="dp4-Su-fXj"/>
+                                    <action selector="closePopup:" destination="hK5-gI-73T" eventType="touchUpInside" id="vAn-2f-e4x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -245,7 +245,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moU-k2-rp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="aCS-oc-RtU">
                     <connections>
-                        <action selector="closePopupTap:" destination="hK5-gI-73T" id="VNN-ZA-Iw0"/>
+                        <action selector="closePopupTap:" destination="hK5-gI-73T" id="0Fe-lD-xG7"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
