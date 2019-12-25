@@ -13,7 +13,7 @@ import SwiftyJSON
 
 var navButton: String = "Default"
 
-class mainScreenViewVontroller: UIViewController {
+class mainScreenViewController: UIViewController {
     @IBOutlet weak var myViewCollection: UICollectionView!
     @IBOutlet weak var userProfileButton: UIButton!
     @IBOutlet weak var assessmentListButton: UIButton!
@@ -62,7 +62,7 @@ func getRequest (){
 }
 
 //Расширение основого контролллера - Обработчик списка пользователей
-extension mainScreenViewVontroller: UICollectionViewDelegate, UICollectionViewDataSource{
+extension mainScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 15;
     }
