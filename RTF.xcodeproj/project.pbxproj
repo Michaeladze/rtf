@@ -21,7 +21,6 @@
 		E5B3C137239AB11700C7E00F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B3C136239AB11700C7E00F /* Assets.xcassets */; };
 		E5B3C13A239AB11700C7E00F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B3C138239AB11700C7E00F /* LaunchScreen.storyboard */; };
 		E5B3C144239D093300C7E00F /* UserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */; };
-		E5C5AB5E23B0C1AB00A64161 /* userLikePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */; };
 		EAD0CBDF23B2A7CF0078028A /* store.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBDE23B2A7CF0078028A /* store.swift */; };
 		EAD0CBE123B2A9860078028A /* devToolsMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE023B2A9860078028A /* devToolsMiddleware.swift */; };
 		EAD0CBE323B2ABB30078028A /* users.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE223B2ABB20078028A /* users.actions.swift */; };
@@ -77,7 +76,6 @@
 		E5B3C139239AB11700C7E00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5B3C13B239AB11700C7E00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCollectionViewCell.swift; sourceTree = "<group>"; tabWidth = 4; };
-		E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLikePopup.swift; sourceTree = "<group>"; };
 		E678D7B03556851580CEFAB5 /* Pods-RTF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTF/Pods-RTF.debug.xcconfig"; sourceTree = "<group>"; };
 		EAD0CBDE23B2A7CF0078028A /* store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = store.swift; sourceTree = "<group>"; };
 		EAD0CBE023B2A9860078028A /* devToolsMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devToolsMiddleware.swift; sourceTree = "<group>"; };
@@ -198,7 +196,6 @@
 				E5B3C131239AB11600C7E00F /* MainScreenViewController.swift */,
 				E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */,
 				E5246A1F23AFCF6200EC71A1 /* UserProfilePopup.swift */,
-				E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */,
 				E5B3C136239AB11700C7E00F /* Assets.xcassets */,
 				E5B3C138239AB11700C7E00F /* LaunchScreen.storyboard */,
 				E5B3C13B239AB11700C7E00F /* Info.plist */,
@@ -403,7 +400,6 @@
 				E5B3C132239AB11600C7E00F /* MainScreenViewController.swift in Sources */,
 				EAD0CBF123B2C3E90078028A /* feedbackProps.reducer.swift in Sources */,
 				EAD0CBFF23B2CC2F0078028A /* subordinates.actions.swift in Sources */,
-				E5C5AB5E23B0C1AB00A64161 /* userLikePopup.swift in Sources */,
 				EAD0CC0523B2CD4F0078028A /* teamInfo.reducer.swift in Sources */,
 				EAD0CBE523B2AD110078028A /* users.reducer.swift in Sources */,
 				EAD0CC0F23B2D1780078028A /* usersFavourite.actions.swift in Sources */,
