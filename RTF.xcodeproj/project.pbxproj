@@ -13,15 +13,15 @@
 		58AAAF5FFFF482EB327BD497 /* interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA7A653ABB071A8E36F12 /* interceptor.swift */; };
 		B5AC7A1128EF6709C652A730 /* Pods_RTF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AFC2C1F25D7BE25DF7EB7B /* Pods_RTF.framework */; };
 		E5246A1E23AF795400EC71A1 /* likeButton.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E5246A1D23AF795300EC71A1 /* likeButton.pdf */; };
+		E5246A2023AFCF6200EC71A1 /* UserProfilePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5246A1F23AFCF6200EC71A1 /* UserProfilePopup.swift */; };
 		E5A2338C23AF72E500D889EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A2338A23AF72E500D889EC /* Main.storyboard */; };
-		E5A2C38C23B38DA1001E15AA /* UserLikePopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2C38A23B38DA1001E15AA /* UserLikePopupController.swift */; };
-		E5A2C38D23B38DA1001E15AA /* UserProfilePopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2C38B23B38DA1001E15AA /* UserProfilePopupController.swift */; };
 		E5B3C12E239AB11600C7E00F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C12D239AB11600C7E00F /* AppDelegate.swift */; };
 		E5B3C130239AB11600C7E00F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C12F239AB11600C7E00F /* SceneDelegate.swift */; };
 		E5B3C132239AB11600C7E00F /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C131239AB11600C7E00F /* MainScreenViewController.swift */; };
 		E5B3C137239AB11700C7E00F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B3C136239AB11700C7E00F /* Assets.xcassets */; };
 		E5B3C13A239AB11700C7E00F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5B3C138239AB11700C7E00F /* LaunchScreen.storyboard */; };
 		E5B3C144239D093300C7E00F /* UserListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */; };
+		E5C5AB5E23B0C1AB00A64161 /* userLikePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */; };
 		EAD0CBDF23B2A7CF0078028A /* store.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBDE23B2A7CF0078028A /* store.swift */; };
 		EAD0CBE123B2A9860078028A /* devToolsMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE023B2A9860078028A /* devToolsMiddleware.swift */; };
 		EAD0CBE323B2ABB30078028A /* users.actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD0CBE223B2ABB20078028A /* users.actions.swift */; };
@@ -67,9 +67,8 @@
 		58AAAEABC41AE353FDA7F811 /* usersRecent.effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = usersRecent.effect.swift; sourceTree = "<group>"; };
 		892A1881A922B86E8624AAC4 /* Pods-RTF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTF.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTF/Pods-RTF.release.xcconfig"; sourceTree = "<group>"; };
 		E5246A1D23AF795300EC71A1 /* likeButton.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = likeButton.pdf; sourceTree = "<group>"; };
+		E5246A1F23AFCF6200EC71A1 /* UserProfilePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilePopup.swift; sourceTree = "<group>"; };
 		E5A2338B23AF72E500D889EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E5A2C38A23B38DA1001E15AA /* UserLikePopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLikePopupController.swift; sourceTree = "<group>"; };
-		E5A2C38B23B38DA1001E15AA /* UserProfilePopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfilePopupController.swift; sourceTree = "<group>"; };
 		E5B3C12A239AB11600C7E00F /* RTF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B3C12D239AB11600C7E00F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5B3C12F239AB11600C7E00F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		E5B3C139239AB11700C7E00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5B3C13B239AB11700C7E00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCollectionViewCell.swift; sourceTree = "<group>"; tabWidth = 4; };
+		E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLikePopup.swift; sourceTree = "<group>"; };
 		E678D7B03556851580CEFAB5 /* Pods-RTF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTF/Pods-RTF.debug.xcconfig"; sourceTree = "<group>"; };
 		EAD0CBDE23B2A7CF0078028A /* store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = store.swift; sourceTree = "<group>"; };
 		EAD0CBE023B2A9860078028A /* devToolsMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devToolsMiddleware.swift; sourceTree = "<group>"; };
@@ -169,24 +169,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E539453423B389C800F73E8E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				E5A2C38A23B38DA1001E15AA /* UserLikePopupController.swift */,
-				E5A2C38B23B38DA1001E15AA /* UserProfilePopupController.swift */,
-				E5B3C131239AB11600C7E00F /* MainScreenViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		E539453523B38A4D00F73E8E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		E5B3C121239AB11600C7E00F = {
 			isa = PBXGroup;
 			children = (
@@ -210,11 +192,13 @@
 			isa = PBXGroup;
 			children = (
 				EAD0CBD923B2A7740078028A /* _store */,
-				E539453523B38A4D00F73E8E /* View */,
-				E539453423B389C800F73E8E /* Controller */,
 				E5A2338A23AF72E500D889EC /* Main.storyboard */,
 				E5B3C12D239AB11600C7E00F /* AppDelegate.swift */,
 				E5B3C12F239AB11600C7E00F /* SceneDelegate.swift */,
+				E5B3C131239AB11600C7E00F /* MainScreenViewController.swift */,
+				E5B3C143239D093300C7E00F /* UserListCollectionViewCell.swift */,
+				E5246A1F23AFCF6200EC71A1 /* UserProfilePopup.swift */,
+				E5C5AB5D23B0C1AB00A64161 /* userLikePopup.swift */,
 				E5B3C136239AB11700C7E00F /* Assets.xcassets */,
 				E5B3C138239AB11700C7E00F /* LaunchScreen.storyboard */,
 				E5B3C13B239AB11700C7E00F /* Info.plist */,
@@ -380,19 +364,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RTF/Pods-RTF-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/ReSwiftMonitor/ReSwiftMonitor.framework",
-				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwiftMonitor.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,7 +393,6 @@
 				E5B3C144239D093300C7E00F /* UserListCollectionViewCell.swift in Sources */,
 				EAD0CBF523B2C6ED0078028A /* message.reducer.swift in Sources */,
 				EAD0CC0923B2CE790078028A /* thanks.reducer.swift in Sources */,
-				E5A2C38C23B38DA1001E15AA /* UserLikePopupController.swift in Sources */,
 				EAD0CBF723B2C7F20078028A /* requestRating.actions.swift in Sources */,
 				EAD0CC2323B2D8610078028A /* usersTeam.actions.swift in Sources */,
 				EAD0CBE123B2A9860078028A /* devToolsMiddleware.swift in Sources */,
@@ -422,6 +403,7 @@
 				E5B3C132239AB11600C7E00F /* MainScreenViewController.swift in Sources */,
 				EAD0CBF123B2C3E90078028A /* feedbackProps.reducer.swift in Sources */,
 				EAD0CBFF23B2CC2F0078028A /* subordinates.actions.swift in Sources */,
+				E5C5AB5E23B0C1AB00A64161 /* userLikePopup.swift in Sources */,
 				EAD0CC0523B2CD4F0078028A /* teamInfo.reducer.swift in Sources */,
 				EAD0CBE523B2AD110078028A /* users.reducer.swift in Sources */,
 				EAD0CC0F23B2D1780078028A /* usersFavourite.actions.swift in Sources */,
@@ -436,6 +418,7 @@
 				EAD0CC0D23B2CFC50078028A /* usersAll.reducer.swift in Sources */,
 				EAD0CC1F23B2D7910078028A /* usersRequest.actions.swift in Sources */,
 				E5B3C130239AB11600C7E00F /* SceneDelegate.swift in Sources */,
+				E5246A2023AFCF6200EC71A1 /* UserProfilePopup.swift in Sources */,
 				EAD0CBED23B2BCA10078028A /* comparison.reducers.swift in Sources */,
 				EAD0CC1723B2D48C0078028A /* usersInbox.reducer.swift in Sources */,
 				EAD0CBE723B2B3A70078028A /* boss.actions.swift in Sources */,
@@ -449,7 +432,6 @@
 				EAD0CBEB23B2BC930078028A /* comparison.actions.swift in Sources */,
 				EAD0CBFB23B2CA470078028A /* statistics.actions.swift in Sources */,
 				EAD0CC1D23B2D6530078028A /* usersRecent.reducer.swift in Sources */,
-				E5A2C38D23B38DA1001E15AA /* UserProfilePopupController.swift in Sources */,
 				58AAA12CF824826C497B31D8 /* usersRecent.actions.swift in Sources */,
 				58AAAD7625A749ABFDD77A3C /* usersRecent.effect.swift in Sources */,
 			);

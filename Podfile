@@ -14,7 +14,10 @@ platform :ios, '13.0'
 # имплементация redux
 pod 'ReSwift'
 # redux devtools для ReSwift
-pod 'ReSwiftMonitor', :configurations => ['Debug']
+
+
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
 # networking, аналог axios
 pod 'Alamofire'
 # работа с JSON

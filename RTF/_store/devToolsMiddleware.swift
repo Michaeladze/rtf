@@ -7,7 +7,7 @@
 //
 
 import ReSwift
-import ReSwiftMonitor
+
 
 /*
  аналог redux devtools на express

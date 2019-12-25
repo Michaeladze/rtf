@@ -11,7 +11,7 @@ import ReSwift
 /* создаем все actions в этом объекте */
 enum usersRecentActions: Action {
     case pendingGetRecentUsers
-    case successGetRecentUsers
+    case successGetRecentUsers([IUser])
     
     case pendingPinForRecent
     case successPinForRecent

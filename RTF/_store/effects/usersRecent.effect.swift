@@ -14,18 +14,14 @@ import SwiftyJSON
             next(action)
             let sessionManager = Alamofire.SessionManager.default
             sessionManager.adapter = interceptor(project: "RTF")
-            sessionManager.request("https://p2passesmentj2dacd8d8.ru1.hana.ondemand.com/p2p-assessment/relation/recent", method: .post).responseJSON { response in
-                switch response.result {
-                case .success(let value):
-                    let json = JSON(value)
-                    print("JSON: \(json)")
-                    next(usersRecentActions.successGetRecentUsers)
-
-                case .failure(let error):
+            sessionManager.request("https://p2passesmentj2dacd8d8.ru1.hana.ondemand.com/p2p-assessment/relation/recent", method: .post, encoding: JSONEncoding.default).response { response in
+                switch response.error {
+                case .none:
+                    let data = try? JSONDecoder().decode([IUser].self, from: response.data!)
+                    next(usersRecentActions.successGetRecentUsers(data!))
+                case .some(let error):
                     print(error)
                 }
             }
-
-
         }}}
     }

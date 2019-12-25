@@ -10,7 +10,7 @@ import ReSwift
 
 
 struct usersRecentState: StateType {
-    var collection = ""
+    var collection:[IUser] = []
     var status = ""
 }
 
@@ -25,8 +25,8 @@ func usersRecentReducer(action: Action, state: usersRecentState?) -> usersRecent
     case .pendingGetRecentUsers:
         state.status = "[Pending] pendingGetRecentUsers"
         break;
-    case .successGetRecentUsers:
-        state.collection = "data blob, state change"
+    case .successGetRecentUsers(let users):
+        state.collection = users;
         state.status = "[Success] successGetRecentUsers"
         break;
     case .pendingPinForRecent:
