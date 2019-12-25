@@ -12,9 +12,8 @@ import SwiftyJSON
         return { dispatch, getState in { next in return { action in
             print(action)
             next(action)
-            let sessionManager = Alamofire.SessionManager.default
-            sessionManager.adapter = interceptor(project: "RTF")
-            sessionManager.request("https://p2passesmentj2dacd8d8.ru1.hana.ondemand.com/p2p-assessment/relation/recent", method: .post, encoding: JSONEncoding.default).response { response in
+
+            Alamofire.request(Interceptor.serviceRequest(service: "relation/recent")).response { response in
                 switch response.error {
                 case .none:
                     let data = try? JSONDecoder().decode([IUser].self, from: response.data!)
