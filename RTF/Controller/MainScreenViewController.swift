@@ -81,7 +81,7 @@ extension MainScreenViewController: UICollectionViewDelegate, UICollectionViewDa
         cell.firstName.text = navButton + String(indexPath.row)
         cell.lastName.text = "Первый " + String(indexPath.row)
 
-        cell.userImage.layer.cornerRadius = 30
+        cell.userImage.layer.cornerRadius = cell.userImage.frame.height/2
         //cell.userImage.layer.masksToBounds = true
         cell.userImage.image = #imageLiteral(resourceName: "ava.jpg")
         return cell
